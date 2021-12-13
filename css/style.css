@@ -1,0 +1,1578 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse; }
+
+fieldset {
+  border: none; }
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0; }
+
+.wrap::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* header_sub --------------------------------*/
+#header_sub {
+  width: 100%;
+  border-bottom: 1px solid #ddd; }
+  #header_sub .inner {
+    width: 1180px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative; }
+    #header_sub .inner > h1 {
+      position: absolute;
+      left: 0;
+      bottom: 15px; }
+      #header_sub .inner > h1 a {
+        font: bold 24px/1 'arial';
+        color: #444; }
+    #header_sub .inner #gnb {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+      #header_sub .inner #gnb li {
+        float: left; }
+        #header_sub .inner #gnb li a {
+          display: inline-block;
+          padding: 14px 40px;
+          font: bold 15px/1 'arial';
+          color: #777; }
+          #header_sub .inner #gnb li a:hover {
+            background-color: #555;
+            color: #fff; }
+    #header_sub .inner .util {
+      position: absolute;
+      top: 20px;
+      right: 40px; }
+      #header_sub .inner .util li {
+        float: left;
+        margin-left: 20px; }
+        #header_sub .inner .util li a {
+          font: 12px/1 'arial';
+          color: #999; }
+    #header_sub .inner .btnCall {
+      display: none;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%); }
+      #header_sub .inner .btnCall::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: top 0.5s 0s, transform 0.5s 0.5s; }
+      #header_sub .inner .btnCall::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: bottom 0.5s 0s, transform 0.5s 0.5s; }
+      #header_sub .inner .btnCall span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        text-indent: -9999px;
+        transition: 0.5s; }
+      #header_sub .inner .btnCall.on::before {
+        top: 50%;
+        margin-top: -1px;
+        transform: rotate(45deg); }
+      #header_sub .inner .btnCall.on::after {
+        bottom: 50%;
+        margin-bottom: -1px;
+        transform: rotate(-45deg); }
+      #header_sub .inner .btnCall.on span {
+        transform: translateX(100%);
+        opacity: 0; }
+    #header_sub .inner .menuMo {
+      position: fixed;
+      top: 0;
+      left: -270px;
+      width: 270px;
+      height: 100vh;
+      background: #333;
+      transition: 0.5s;
+      padding: 35px 30px;
+      z-index: 10; }
+      #header_sub .inner .menuMo h1 {
+        border-bottom: 1px solid #666;
+        padding-bottom: 30px; }
+        #header_sub .inner .menuMo h1 a {
+          display: block;
+          font: bold 24px/1 'arial';
+          color: #fff;
+          text-align: center; }
+        #header_sub .inner .menuMo h1 span {
+          font-size: 12px;
+          color: #aaa; }
+      #header_sub .inner .menuMo #gnbMo li a {
+        display: block;
+        width: 100%;
+        padding: 20px 0px;
+        border-bottom: 1px solid #444;
+        font: bold 14px/1 "arial";
+        color: #888;
+        text-align: center; }
+      #header_sub .inner .menuMo.on {
+        left: 0px; }
+
+/* content section ---------------------------*/
+.content {
+  width: 100%;
+  padding: 0px 0px 150px; }
+  .content .sub_visual {
+    width: 100%;
+    height: 250px;
+    background: #bbb;
+    margin-bottom: 100px; }
+  .content .inner {
+    width: 1180px;
+    margin: 0 auto;
+    min-height: 500px; }
+    .content .inner h1 {
+      font: normal 50px/1 "arial";
+      color: #000;
+      margin-bottom: 60px; }
+      .content .inner h1 span {
+        font: normal 20px/1 "맑은 고딕";
+        color: #aaa; }
+        .content .inner h1 span::before {
+          content: '/';
+          margin-right: 20px;
+          margin-left: 10px; }
+
+/* footer_sub --------------------------------*/
+#footer_sub {
+  width: 100%;
+  padding: 100px 0;
+  background: #444; }
+  #footer_sub .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footer_sub .inner::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #footer_sub .inner h1 {
+      font: bold 24px/1 'arial';
+      color: #666;
+      float: left; }
+    #footer_sub .inner ul {
+      float: right; }
+      #footer_sub .inner ul li {
+        float: left;
+        margin-left: 20px; }
+        #footer_sub .inner ul li a {
+          font: bold 14px/1 'arial';
+          color: #666; }
+    #footer_sub .inner address {
+      width: 100%;
+      float: left;
+      font: 14px/1.3 'arial';
+      color: #777;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border-top: 1px solid #888;
+      padding-top: 20px; }
+    #footer_sub .inner p {
+      font: 12px/1 'arial';
+      color: #777;
+      width: 100%;
+      float: left; }
+
+/*tablet --------------------------------------------*/
+@media screen and (max-width: 1179px) {
+  #header_sub .inner {
+    width: 100%;
+    height: 100px; }
+    #header_sub .inner > h1 {
+      left: 20px; }
+    #header_sub .inner .menuWeb {
+      display: none; }
+    #header_sub .inner .btnCall {
+      display: block; }
+
+  /*content section ----------------------------------------*/
+  .content {
+    padding: 0px 0px 100px; }
+    .content .sub_visual {
+      height: 200px; }
+    .content .inner {
+      width: 100%;
+      padding: 0 30px; }
+
+  /* footer ------------------------------------*/
+  #footer_sub {
+    padding: 80px 30px; }
+    #footer_sub .inner {
+      width: 100%; } }
+/*mobile ---------------------------------------------*/
+@media screen and (max-width: 539px) {
+  /*content section ----------------------------------------*/
+  .content {
+    padding: 0px 0px 80px; }
+    .content .sub_visual {
+      height: 150px; }
+    .content .inner h1 {
+      font: normal 42px/1 "arial"; }
+      .content .inner h1 span {
+        display: block;
+        margin-top: 10px; }
+
+  /* footer ------------------------------------*/
+  #footer_sub .inner h1 {
+    margin-bottom: 20px; }
+  #footer_sub .inner ul {
+    width: 100%; }
+    #footer_sub .inner ul li {
+      margin-left: 0;
+      margin: 5px; } }
+/*vusual ----------------------------------------------*/
+#visual_department {
+  width: 100%; }
+  #visual_department .sub_visual {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(164, 187, 190, 0.863); }
+    #visual_department .sub_visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+      filter: blur(2px); }
+    #visual_department .sub_visual .inner_txt {
+      width: 1180px;
+      text-align: center;
+      position: absolute;
+      bottom: 46%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.9; }
+      #visual_department .sub_visual .inner_txt > h1 {
+        font: normal 40px/1.2 'EB Garamond';
+        color: #fff;
+        letter-spacing: 3px;
+        margin-bottom: 30px; }
+      #visual_department .sub_visual .inner_txt > p {
+        text-align: center;
+        font: normal 18px/50px 'EB Garamond';
+        color: rgba(238, 238, 238, 0.781); }
+        #visual_department .sub_visual .inner_txt > p::after {
+          content: "";
+          display: block;
+          width: 75px;
+          height: 2px;
+          background: rgba(221, 221, 221, 0.527);
+          transition: 1s;
+          position: absolute;
+          bottom: -50px;
+          right: 50%;
+          transform: translateX(50%); }
+
+/*about-------------------------------------------*/
+#about {
+  width: 100%;
+  background: rgba(238, 238, 238, 0.555); }
+  #about .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #about .inner .welcome {
+      background: #fff;
+      padding: 60px 70px;
+      width: 100%;
+      position: absolute;
+      top: -70px;
+      position: relative; }
+      #about .inner .welcome::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 490px;
+        background: rgba(175, 175, 175, 0.219);
+        transition: 1s;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translateY(-50%); }
+      #about .inner .welcome::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #about .inner .welcome .pic {
+        width: 450px;
+        height: 490px;
+        float: left;
+        position: relative; }
+        #about .inner .welcome .pic .img1 {
+          position: absolute;
+          bottom: 0;
+          width: 80%;
+          height: 90%;
+          object-fit: cover;
+          opacity: 0.8; }
+        #about .inner .welcome .pic .img2 {
+          position: absolute;
+          right: 0;
+          width: 80%;
+          height: 90%;
+          object-fit: cover; }
+      #about .inner .welcome .welcome_txt {
+        text-align: center;
+        float: right;
+        width: 450px;
+        height: 490px;
+        margin-right: 0;
+        position: relative; }
+        #about .inner .welcome .welcome_txt h1 {
+          font: bold 30px/1 'EB Garamond';
+          color: #333;
+          letter-spacing: 3px;
+          margin-bottom: 25px; }
+        #about .inner .welcome .welcome_txt h2 {
+          font: normal 20px/2.5 'EB Garamond';
+          color: #555;
+          letter-spacing: 1.5px;
+          margin-bottom: 35px;
+          border-top: 1px solid rgba(153, 153, 153, 0.527);
+          border-bottom: 1px solid rgba(153, 153, 153, 0.527); }
+        #about .inner .welcome .welcome_txt p {
+          word-break: break-all;
+          font: normal 18px/1.3 'EB Garamond';
+          color: #777;
+          letter-spacing: 0.6px;
+          text-align: left; }
+        #about .inner .welcome .welcome_txt > a {
+          display: block;
+          width: 200px;
+          height: 35px;
+          border: 1px solid #555;
+          font: normal 13px/35px "arial";
+          color: #555;
+          text-align: center;
+          position: absolute;
+          bottom: 0;
+          left: 25%;
+          letter-spacing: 1.2px;
+          transition: 1s; }
+          #about .inner .welcome .welcome_txt > a > i {
+            margin-left: 5px; }
+          #about .inner .welcome .welcome_txt > a:hover {
+            background: #333;
+            color: #eee; }
+
+/*our story ---------------------------------------------*/
+#ourstory {
+  width: 100%;
+  background: rgba(238, 238, 238, 0.555);
+  position: relative;
+  padding: 0 0 100px; }
+  #ourstory .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #ourstory .inner .wrap {
+      width: 100%;
+      display: flex;
+      position: relative; }
+      #ourstory .inner .wrap .story_txt {
+        width: 40%;
+        position: relative;
+        margin-right: 100px;
+        transform: translateY(30px); }
+        #ourstory .inner .wrap .story_txt .left {
+          font-size: 30px;
+          color: #bbb; }
+        #ourstory .inner .wrap .story_txt .right {
+          font-size: 30px;
+          color: #bbb;
+          position: absolute;
+          right: 0; }
+        #ourstory .inner .wrap .story_txt h2 {
+          font: bold 28px/1.3 'EB Garamond';
+          color: #777;
+          letter-spacing: 2px;
+          margin-left: 45px;
+          margin-right: 20px;
+          margin-top: 10px; }
+        #ourstory .inner .wrap .story_txt p {
+          font: normal 15px/1 'EB Garamond';
+          color: #aaa;
+          letter-spacing: 2px;
+          margin-left: 45px;
+          margin-top: 30px; }
+      #ourstory .inner .wrap .pic {
+        width: 60%;
+        height: 300px; }
+        #ourstory .inner .wrap .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: grayscale(0.6); }
+
+/*surv-------------------------------------*/
+#surv {
+  background-color: #ded6d4d0;
+  width: 100%;
+  padding: 100px 0; }
+  #surv .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #surv .inner .wrap {
+      width: 100%;
+      display: flex; }
+      #surv .inner .wrap article {
+        position: relative;
+        width: 370px;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 60px; }
+        #surv .inner .wrap article:last-child {
+          margin-right: 0; }
+        #surv .inner .wrap article .txt {
+          width: 370px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 7; }
+          #surv .inner .wrap article .txt a {
+            display: block;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 18px;
+            line-height: 51px;
+            background-color: #fff;
+            color: #999;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 4px #ccc; }
+          #surv .inner .wrap article .txt h2 {
+            font: bold 23px/1.3 'EB Garamond';
+            color: #333;
+            letter-spacing: 1.2px;
+            position: relative; }
+            #surv .inner .wrap article .txt h2::before {
+              content: "";
+              display: block;
+              width: 90px;
+              height: 2px;
+              background: #333;
+              transition: 1s;
+              position: absolute;
+              top: 50px;
+              left: 0; }
+          #surv .inner .wrap article .txt p {
+            width: 69%;
+            word-break: break-all;
+            font: normal 19px/1.3 'EB Garamond';
+            color: #888;
+            letter-spacing: 0.3px;
+            margin-left: 100px;
+            margin-top: 10px; }
+        #surv .inner .wrap article span {
+          font: 200px/1 "arial";
+          color: #fff;
+          position: absolute;
+          right: 0;
+          bottom: 10%;
+          opacity: 0.2; }
+
+/*ceo-------------------------------------------*/
+#ceo {
+  width: 100%;
+  background: url(/img/Ocean\ Split.jpeg) no-repeat;
+  filter: grayscale(0.5);
+  background-size: cover;
+  padding: 100px 0 100px;
+  position: relative; }
+  #ceo .inner {
+    width: 1180px;
+    height: 440px;
+    margin: 0 auto; }
+    #ceo .inner .wrap {
+      width: 100%;
+      background: #fff;
+      padding: 60px 70px;
+      position: relative; }
+      #ceo .inner .wrap::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 490px;
+        background: rgba(175, 175, 175, 0.219);
+        transition: 1s;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translateY(-50%); }
+      #ceo .inner .wrap .ceo_txt {
+        text-align: center;
+        float: left;
+        width: 450px;
+        height: 490px;
+        position: relative; }
+        #ceo .inner .wrap .ceo_txt h1 {
+          font: bold 30px/1 'EB Garamond';
+          color: #333;
+          letter-spacing: 3px;
+          margin-bottom: 25px; }
+          #ceo .inner .wrap .ceo_txt h1::before {
+            content: "";
+            display: block;
+            width: 200px;
+            height: 1px;
+            background: rgba(153, 153, 153, 0.527);
+            transition: 1s;
+            position: absolute;
+            top: 55px;
+            right: 29%; }
+        #ceo .inner .wrap .ceo_txt .ceo_icon {
+          margin-bottom: 35px; }
+          #ceo .inner .wrap .ceo_txt .ceo_icon::after {
+            content: "";
+            display: block;
+            clear: both; }
+          #ceo .inner .wrap .ceo_txt .ceo_icon i {
+            transform: translateX(123px);
+            float: left;
+            display: block;
+            text-align: center;
+            border: 0.5px solid #777;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            line-height: 27px;
+            font-size: 16px;
+            color: #777;
+            margin: 20px 10px;
+            cursor: pointer;
+            transition: 0.5s; }
+            #ceo .inner .wrap .ceo_txt .ceo_icon i:hover {
+              background-color: #777;
+              color: #eee;
+              border: none; }
+        #ceo .inner .wrap .ceo_txt p {
+          position: absolute;
+          bottom: 90px;
+          word-break: break-all;
+          font: normal 18px/1.3 'EB Garamond';
+          color: #777;
+          letter-spacing: 0.6px;
+          text-align: left; }
+        #ceo .inner .wrap .ceo_txt a {
+          display: block;
+          width: 200px;
+          height: 35px;
+          border: 1px solid #555;
+          font: normal 13px/35px "arial";
+          color: #555;
+          text-align: center;
+          position: absolute;
+          bottom: 0;
+          left: 28%;
+          letter-spacing: 1.2px;
+          transition: 1s; }
+          #ceo .inner .wrap .ceo_txt a > i {
+            margin-left: 5px; }
+          #ceo .inner .wrap .ceo_txt a:hover {
+            background: #555;
+            color: #eee; }
+      #ceo .inner .wrap .ceopic {
+        width: 450px;
+        height: 490px;
+        float: right;
+        border: 1px solid rgba(153, 153, 153, 0.527); }
+        #ceo .inner .wrap .ceopic .ceoimg1 {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: saturate(120%); }
+
+/* member --------------------------------*/
+#member {
+  width: 100%;
+  padding-top: 150px;
+  background-color: rgba(238, 238, 238, 0.555); }
+  #member .member_inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #member .member_inner > h1 {
+      font: bold 30px/1 'EB Garamond';
+      color: #333;
+      letter-spacing: 3px;
+      margin-bottom: 50px;
+      text-align: right;
+      margin-bottom: 50px;
+      position: relative; }
+      #member .member_inner > h1::before {
+        content: "";
+        display: block;
+        width: 78%;
+        height: 1px;
+        background: rgba(153, 153, 153, 0.527);
+        transition: 1s;
+        position: absolute;
+        top: 20px;
+        left: 0%;
+        transform: translateY(-50%); }
+    #member .member_inner .wrap {
+      width: 1180px;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+      margin: 0 auto;
+      padding: 50px 0px; }
+      #member .member_inner .wrap article {
+        float: left;
+        width: 310px;
+        height: 320px;
+        margin-right: 120px;
+        cursor: pointer;
+        opacity: 0.9;
+        transition: 1s;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 100px; }
+        #member .member_inner .wrap article:nth-of-type(3), #member .member_inner .wrap article:nth-of-type(6), #member .member_inner .wrap article:nth-of-type(9) {
+          margin-right: 0; }
+        #member .member_inner .wrap article::before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: #555;
+          position: absolute;
+          top: 50px;
+          left: -150px;
+          opacity: 0;
+          transition: 1s; }
+        #member .member_inner .wrap article .inner {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          margin: 0 auto; }
+          #member .member_inner .wrap article .inner::after {
+            content: '';
+            display: block;
+            clear: both; }
+          #member .member_inner .wrap article .inner .txt {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+            display: flex;
+            transition: 0.5s;
+            letter-spacing: 1.2px;
+            position: absolute;
+            bottom: 0%;
+            left: -10%; }
+            #member .member_inner .wrap article .inner .txt h2 {
+              font: bold 18px/1 'EB Garamond';
+              color: #333;
+              transition: 1s;
+              margin-right: 10px; }
+            #member .member_inner .wrap article .inner .txt p {
+              font: 14px/18px 'EB Garamond';
+              color: #999; }
+          #member .member_inner .wrap article .inner figure {
+            transform-origin: center;
+            width: 100%;
+            height: 100%;
+            background: #777;
+            transition: 1s;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 15px;
+            filter: saturate(30%); }
+            #member .member_inner .wrap article .inner figure img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          #member .member_inner .wrap article .inner .icon {
+            width: 100%; }
+            #member .member_inner .wrap article .inner .icon a {
+              float: left;
+              display: block;
+              text-align: center;
+              border: 0.5px solid #555;
+              border-radius: 50%;
+              width: 24px;
+              height: 24px;
+              margin-right: 5px;
+              line-height: 24px;
+              font-size: 14px;
+              color: #555;
+              margin-left: 5px; }
+        #member .member_inner .wrap article:hover::before {
+          left: -50px;
+          opacity: 1; }
+        #member .member_inner .wrap article:hover figure {
+          transform: scale(1.03);
+          filter: saturate(120%); }
+        #member .member_inner .wrap article:hover .txt h2 {
+          color: #eee; }
+        #member .member_inner .wrap article:hover .txt p {
+          color: #999; }
+        #member .member_inner .wrap article:hover .icon a {
+          background-color: #eee;
+          border: none;
+          line-height: 25px;
+          transition: 0.5s; }
+          #member .member_inner .wrap article:hover .icon a:hover {
+            transform: scale(1.2); }
+
+/*newsletter-----------------------------------------*/
+#newsletter {
+  width: 100%;
+  padding: 100px 0;
+  background: rgba(207, 207, 207, 0.555); }
+  #newsletter .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #newsletter .inner h1 {
+      font: bold 30px/1 'EB Garamond';
+      color: #333;
+      letter-spacing: 3px;
+      margin-bottom: 50px;
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative; }
+    #newsletter .inner p {
+      font: normal 18px/1.3 'EB Garamond';
+      color: #555;
+      letter-spacing: 0.6px;
+      text-align: center; }
+    #newsletter .inner .wrap {
+      width: 100%;
+      margin-top: 40px;
+      text-align: center; }
+      #newsletter .inner .wrap input {
+        width: 18%;
+        height: 30px;
+        margin-right: 20px;
+        border: none;
+        border-bottom: 1px solid #555;
+        background-color: unset; }
+        #newsletter .inner .wrap input:last-child {
+          transition: 1s;
+          border: 1px solid #555;
+          width: 10%;
+          cursor: pointer;
+          font: normal 14px/1 "arial";
+          color: #555; }
+          #newsletter .inner .wrap input:last-child:hover {
+            background-color: #555;
+            color: #eee; }
+
+/* header --------------------------------*/
+#header {
+  width: 100%;
+  border-bottom: 1px solid #ddd; }
+  #header .inner {
+    width: 1180px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative; }
+    #header .inner > h1 {
+      position: absolute;
+      left: 0;
+      bottom: 15px; }
+      #header .inner > h1 a {
+        font: bold 24px/1 'arial';
+        color: #444; }
+    #header .inner #gnb {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+      #header .inner #gnb li {
+        float: left; }
+        #header .inner #gnb li a {
+          display: inline-block;
+          padding: 14px 40px;
+          font: bold 15px/1 'arial';
+          color: #777; }
+          #header .inner #gnb li a:hover {
+            background-color: #555;
+            color: #fff; }
+    #header .inner .util {
+      position: absolute;
+      top: 20px;
+      right: 40px; }
+      #header .inner .util li {
+        float: left;
+        margin-left: 20px; }
+        #header .inner .util li a {
+          font: 12px/1 'arial';
+          color: #999; }
+    #header .inner .btnCall {
+      display: none;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%); }
+      #header .inner .btnCall::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: top 0.5s 0s, transform 0.5s 0.5s; }
+      #header .inner .btnCall::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: bottom 0.5s 0s, transform 0.5s 0.5s; }
+      #header .inner .btnCall span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        text-indent: -9999px;
+        transition: 0.5s; }
+      #header .inner .btnCall.on::before {
+        top: 50%;
+        margin-top: -1px;
+        transform: rotate(45deg); }
+      #header .inner .btnCall.on::after {
+        bottom: 50%;
+        margin-bottom: -1px;
+        transform: rotate(-45deg); }
+      #header .inner .btnCall.on span {
+        transform: translateX(100%);
+        opacity: 0; }
+    #header .inner .menuMo {
+      position: fixed;
+      top: 0;
+      left: -270px;
+      width: 270px;
+      height: 100vh;
+      background: #333;
+      transition: 0.5s;
+      padding: 35px 30px;
+      z-index: 10; }
+      #header .inner .menuMo h1 {
+        border-bottom: 1px solid #666;
+        padding-bottom: 30px; }
+        #header .inner .menuMo h1 a {
+          display: block;
+          font: bold 24px/1 'arial';
+          color: #fff;
+          text-align: center; }
+        #header .inner .menuMo h1 span {
+          font-size: 12px;
+          color: #aaa; }
+      #header .inner .menuMo #gnbMo li a {
+        display: block;
+        width: 100%;
+        padding: 20px 0px;
+        border-bottom: 1px solid #444;
+        font: bold 14px/1 "arial";
+        color: #888;
+        text-align: center; }
+      #header .inner .menuMo.on {
+        left: 0px; }
+
+/* visual --------------------------------*/
+#visual {
+  width: 100%;
+  height: 600px;
+  background: #000;
+  position: relative;
+  overflow: hidden; }
+  #visual video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(80%) grayscale(0.8); }
+  #visual .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #visual .inner a {
+      display: block;
+      position: absolute;
+      top: -60px;
+      left: 0px;
+      font: bold 14px/20px 'EB Garamond';
+      color: #888;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #888; }
+    #visual .inner h1 {
+      font: normal 45px/1.2 'EB Garamond';
+      color: #555;
+      margin-bottom: 80px;
+      letter-spacing: 2px; }
+    #visual .inner::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #visual .inner p {
+      width: 400px;
+      font: normal 15px/1.2 'EB Garamond';
+      color: #555;
+      text-align: right;
+      float: right;
+      transform: translateY(100px); }
+    #visual .inner span {
+      width: 120px;
+      font: normal 15px/1.2 "EB Garamond";
+      color: #555;
+      float: left;
+      left: -40px;
+      bottom: -70px;
+      transform: rotate(-90deg) translateX(-70px) translateY(-40px); }
+
+/* news --------------------------------*/
+#news {
+  width: 100%;
+  padding: 100px 0 150px; }
+  #news .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #news .inner .wrap {
+      width: 100%; }
+      #news .inner .wrap article {
+        width: 580px;
+        float: left; }
+        #news .inner .wrap article:last-child(even) {
+          margin-right: 0; }
+        #news .inner .wrap article .box1 {
+          width: 100%;
+          height: 540px;
+          overflow: hidden;
+          position: relative; }
+          #news .inner .wrap article .box1 .pic1 {
+            width: 300px;
+            height: 360px;
+            overflow: hidden; }
+          #news .inner .wrap article .box1 .pic2 {
+            width: 330px;
+            height: 410px;
+            overflow: hidden;
+            position: absolute;
+            top: 70px;
+            left: 70px;
+            object-fit: cover; }
+          #news .inner .wrap article .box1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          #news .inner .wrap article .box1 p {
+            display: inline;
+            font: 18px/1.2 "EB Garamond";
+            background: rgba(238, 238, 238, 0.315);
+            color: #bbb;
+            position: absolute;
+            bottom: 0px;
+            left: 0px; }
+        #news .inner .wrap article .box2 {
+          width: 100%;
+          height: 540px;
+          overflow: hidden;
+          position: relative; }
+          #news .inner .wrap article .box2 > h1 {
+            font: normal 49px/1 "EB Garamond";
+            color: #555;
+            letter-spacing: 1.2px;
+            float: left;
+            position: absolute;
+            top: 45%;
+            left: -44px;
+            transform: rotate(90deg); }
+          #news .inner .wrap article .box2 .txt_box {
+            width: 270px;
+            text-align: left;
+            position: absolute;
+            top: 25%;
+            left: 40%; }
+            #news .inner .wrap article .box2 .txt_box > h2 a {
+              display: block;
+              width: 150px;
+              height: 35px;
+              background: rgba(238, 238, 238, 0.555);
+              font: bold 21px/35px "EB Garamond";
+              color: #555;
+              text-align: center;
+              margin-bottom: 10px;
+              transition: 0.5s; }
+              #news .inner .wrap article .box2 .txt_box > h2 a:hover {
+                background: #555;
+                color: #fff; }
+            #news .inner .wrap article .box2 .txt_box > p {
+              font: normal 19px/1.4 "EB Garamond";
+              color: #777;
+              display: inline;
+              background: rgba(238, 238, 238, 0.315); }
+          #news .inner .wrap article .box2 span {
+            background: rgba(238, 238, 238, 0.315);
+            position: absolute;
+            bottom: 120px;
+            right: -35px;
+            transform: rotate(90deg);
+            color: #bbb;
+            font: 18px/1 "EB Garamond"; }
+        #news .inner .wrap article .box3 {
+          width: 100%;
+          height: 540px;
+          position: relative; }
+          #news .inner .wrap article .box3 .pic3 {
+            float: right;
+            width: 220px;
+            height: 250px; }
+            #news .inner .wrap article .box3 .pic3 img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          #news .inner .wrap article .box3 > h1 {
+            font: normal 49px/1 "EB Garamond";
+            color: #555;
+            letter-spacing: 1.2px;
+            position: absolute;
+            top: 85px;
+            left: 180px;
+            transform: rotate(-90deg); }
+          #news .inner .wrap article .box3 .txt_box {
+            width: 270px;
+            text-align: left;
+            position: absolute;
+            bottom: 120px;
+            left: 40%; }
+            #news .inner .wrap article .box3 .txt_box > h2 a {
+              display: block;
+              width: 150px;
+              height: 35px;
+              background: rgba(238, 238, 238, 0.555);
+              font: bold 21px/35px "EB Garamond";
+              color: #555;
+              text-align: center;
+              margin-bottom: 10px;
+              transition: 0.5s; }
+              #news .inner .wrap article .box3 .txt_box > h2 a:hover {
+                background: #555;
+                color: #fff; }
+            #news .inner .wrap article .box3 .txt_box > p {
+              font: normal 19px/1.4 "EB Garamond";
+              color: #777;
+              display: inline;
+              background: rgba(238, 238, 238, 0.315); }
+          #news .inner .wrap article .box3 span {
+            background: rgba(238, 238, 238, 0.315);
+            position: absolute;
+            bottom: 250px;
+            left: 35px;
+            transform: rotate(-90deg);
+            color: #bbb;
+            font: 18px/1 "EB Garamond"; }
+        #news .inner .wrap article .box4 {
+          width: 100%;
+          height: 540px;
+          position: relative; }
+          #news .inner .wrap article .box4 .pic4 {
+            float: left;
+            width: 250px;
+            height: 380px;
+            margin-left: 20px;
+            position: absolute;
+            top: 25%;
+            z-index: 3; }
+            #news .inner .wrap article .box4 .pic4 img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          #news .inner .wrap article .box4 > p {
+            width: 230px;
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            font: normal 18px/1.2 "EB Garamond";
+            color: #bbb;
+            display: inline-block;
+            background: rgba(238, 238, 238, 0.315); }
+        #news .inner .wrap article .box5 {
+          width: 100%;
+          height: 830px;
+          position: relative;
+          z-index: 3; }
+          #news .inner .wrap article .box5 .pic5 {
+            float: left;
+            width: 100%;
+            height: 380px;
+            margin-top: 20px; }
+            #news .inner .wrap article .box5 .pic5 img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          #news .inner .wrap article .box5 .pic6 {
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            width: 350px;
+            height: 230px;
+            margin-top: 20px; }
+            #news .inner .wrap article .box5 .pic6 img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              opacity: 0.9; }
+          #news .inner .wrap article .box5 > h2 a {
+            width: 270px;
+            display: inline-block;
+            margin-left: 50px;
+            background: rgba(238, 238, 238, 0.555);
+            font: bold 21px/35px "EB Garamond";
+            color: #555;
+            text-align: center;
+            margin-bottom: 10px;
+            transition: 0.5s; }
+            #news .inner .wrap article .box5 > h2 a:hover {
+              background: #555;
+              color: #fff; }
+          #news .inner .wrap article .box5 > p {
+            float: right;
+            width: 250px;
+            position: absolute;
+            bottom: 35%;
+            right: 70px;
+            text-align: right;
+            font: normal 18px/1.2 "EB Garamond";
+            color: #bbb;
+            display: inline;
+            background: rgba(238, 238, 238, 0.315); }
+        #news .inner .wrap article .box6 {
+          width: 100%;
+          height: 800px;
+          position: relative; }
+          #news .inner .wrap article .box6 .pic7 {
+            float: right;
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            top: -100px;
+            left: -70px; }
+            #news .inner .wrap article .box6 .pic7 img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              filter: grayscale(0.8); }
+          #news .inner .wrap article .box6 > h1 {
+            font: normal 49px/1 "EB Garamond";
+            color: #555;
+            letter-spacing: 1.2px;
+            position: absolute;
+            top: 55%;
+            left: -30px;
+            transform: rotate(90deg); }
+          #news .inner .wrap article .box6 .txt_box {
+            width: 260px;
+            text-align: left;
+            position: absolute;
+            bottom: 40px;
+            left: 30%; }
+            #news .inner .wrap article .box6 .txt_box > h2 a {
+              display: block;
+              width: 200px;
+              height: 35px;
+              background: rgba(238, 238, 238, 0.555);
+              font: bold 21px/35px "EB Garamond";
+              color: #555;
+              text-align: center;
+              margin-bottom: 10px;
+              transition: 0.5s; }
+              #news .inner .wrap article .box6 .txt_box > h2 a:hover {
+                background: #555;
+                color: #fff; }
+            #news .inner .wrap article .box6 .txt_box > p {
+              font: normal 19px/1.4 "EB Garamond";
+              color: #777;
+              display: inline;
+              background: rgba(238, 238, 238, 0.315); }
+          #news .inner .wrap article .box6 span {
+            background: rgba(238, 238, 238, 0.315);
+            position: absolute;
+            bottom: 250px;
+            right: 35px;
+            transform: rotate(90deg);
+            color: #bbb;
+            font: 18px/1 "EB Garamond"; }
+
+/* brand --------------------------------*/
+#brand {
+  width: 100%;
+  padding: 100px 0 150px;
+  background: rgba(238, 238, 238, 0.555); }
+  #brand .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #brand .inner h1 {
+      font: normal 45px/1 "EB Garamond";
+      color: #555;
+      letter-spacing: 1.2px;
+      text-align: center;
+      margin-bottom: 80px; }
+    #brand .inner .wrap {
+      width: 100%; }
+      #brand .inner .wrap article {
+        width: 370px;
+        height: 480px;
+        background: #333;
+        float: left;
+        margin-right: 30px;
+        transition: 1s;
+        position: relative; }
+        #brand .inner .wrap article:last-child {
+          margin-right: 0px; }
+        #brand .inner .wrap article:hover img {
+          filter: grayscale(1) brightness(40%); }
+        #brand .inner .wrap article:hover h2 {
+          opacity: 1;
+          transition: 1.5s; }
+        #brand .inner .wrap article:hover p {
+          opacity: 1;
+          transition: 1s 0.2s; }
+        #brand .inner .wrap article:hover a {
+          opacity: 1;
+          transition: 1s 0.4s; }
+        #brand .inner .wrap article img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 1s; }
+        #brand .inner .wrap article h2 {
+          position: absolute;
+          top: 30%;
+          left: 30%;
+          font: bold 30px/1 "EB Garamond";
+          color: #fff;
+          opacity: 1;
+          opacity: 0; }
+        #brand .inner .wrap article p {
+          width: 280px;
+          transform: translate(50%, -300px);
+          font: normal 19px/1.2 "EB Garamond";
+          color: #bbb;
+          opacity: 1;
+          text-align: center;
+          transform: translateX(50px) translateY(-300px);
+          opacity: 0; }
+        #brand .inner .wrap article a {
+          display: block;
+          width: 150px;
+          height: 35px;
+          border: 1px solid #eee;
+          font: normal 14px/35px "arial";
+          text-align: center;
+          transform: translateX(110px) translateY(-250px);
+          color: #eee;
+          opacity: 0; }
+          #brand .inner .wrap article a:hover {
+            background-color: #eee;
+            color: #333;
+            transition: 0.5s; }
+
+/* banner --------------------------------*/
+#banner {
+  width: 100%;
+  padding: 100px 0;
+  background: url(/img/My\ Life\ in\ the\ Countryside.jpeg) no-repeat center/cover fixed;
+  filter: grayscale(0.8) brightness(0.6);
+  opacity: 0.9; }
+  #banner .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #banner .inner h1 {
+      font: italic 28px/1 "EB Garamond";
+      color: #fff;
+      text-align: center;
+      transform: translateY(-20px); }
+    #banner .inner p {
+      font: italic 17px/1.3 'EB Garamond';
+      color: #fff;
+      text-align: center;
+      transform: translateY(20px); }
+
+/* project --------------------------------------------*/
+#project {
+  width: 100%;
+  padding: 150px 0; }
+  #project .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #project .inner .wrap {
+      width: 100%; }
+      #project .inner .wrap article {
+        width: 270px;
+        float: left;
+        margin-right: 30px;
+        border: 1px solid #eee;
+        border-bottom: 3px solid #888; }
+        #project .inner .wrap article:last-child {
+          margin-right: 0;
+          border: none; }
+          #project .inner .wrap article:last-child .line_txt {
+            font: bold 24px/1 "EB Garamond";
+            color: #555;
+            letter-spacing: 1.4px; }
+            #project .inner .wrap article:last-child .line_txt::before {
+              content: "";
+              display: block;
+              width: 75px;
+              height: 2px;
+              background: #555;
+              transform: translateY(50px);
+              transition: 1s; }
+          #project .inner .wrap article:last-child > p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left;
+            transform: translateY(50px);
+            word-break: break-all; }
+          #project .inner .wrap article:last-child a {
+            display: block;
+            width: 200px;
+            height: 35px;
+            border: 1px solid #555;
+            font: normal 13px/35px "arial";
+            color: #555;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            letter-spacing: 1.2px;
+            transition: 1s; }
+            #project .inner .wrap article:last-child a:hover {
+              background: #555;
+              color: #fff; }
+          #project .inner .wrap article:last-child:hover .line_txt::before {
+            width: 190px; }
+        #project .inner .wrap article .pic {
+          width: 100%;
+          height: 250px;
+          background: #666;
+          margin-bottom: 20px; }
+          #project .inner .wrap article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        #project .inner .wrap article h2 {
+          font: bold 18px/1 "EB Garamond";
+          color: #555;
+          text-align: center;
+          margin-bottom: 20px; }
+          #project .inner .wrap article h2::before {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 1px;
+            background: #555;
+            margin: 0 auto;
+            transform: translateY(30px);
+            transition: 1s; }
+        #project .inner .wrap article p {
+          font: normal 16px/1 "EB Garamond";
+          color: #888;
+          text-align: center;
+          margin-bottom: 30px; }
+
+/* swiper------------------------------------*/
+#b_box {
+  width: 100%;
+  padding: 0 0 150px 0; }
+  #b_box .banner_box {
+    width: 100%;
+    margin: 0 auto; }
+    #b_box .banner_box::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #b_box .banner_box .left {
+      width: 40%;
+      height: 380px;
+      background: #444;
+      float: left;
+      position: relative; }
+      #b_box .banner_box .left .inner {
+        position: absolute;
+        right: 10px;
+        padding: 80px 50px;
+        width: 590px;
+        text-align: right; }
+        #b_box .banner_box .left .inner:hover ::before {
+          width: 290px; }
+        #b_box .banner_box .left .inner h1 {
+          font: bold 30px/1 "EB Garamond";
+          letter-spacing: 1.4px;
+          color: #eee;
+          margin-bottom: 50px; }
+          #b_box .banner_box .left .inner h1::before {
+            content: "";
+            display: block;
+            width: 75px;
+            height: 2px;
+            background: #777;
+            transition: 1s;
+            position: absolute;
+            right: 50px;
+            top: 42%; }
+        #b_box .banner_box .left .inner p {
+          font: 18px/1.2 "EB Garamond";
+          color: #bbb;
+          margin-bottom: 50px; }
+        #b_box .banner_box .left .inner .btn {
+          display: block;
+          width: 120px;
+          height: 30px;
+          border: 1px solid #eee;
+          font: 13px/30px "arial";
+          color: #bbb;
+          text-align: center;
+          position: absolute;
+          right: 50px;
+          transition: 0.5s; }
+          #b_box .banner_box .left .inner .btn:hover {
+            background: #bbb;
+            color: #333; }
+    #b_box .banner_box .right {
+      width: 60%;
+      height: 380px;
+      background: #888;
+      float: left; }
+      #b_box .banner_box .right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/* comments --------------------------------*/
+#comments {
+  width: 100%;
+  padding: 0px 0px 150px 0px; }
+  #comments .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #comments .inner h1 {
+      font: 20px "arial";
+      color: #555;
+      text-align: center;
+      margin-bottom: 30px; }
+    #comments .inner ul {
+      width: 100%; }
+    #comments .inner li {
+      width: 100%;
+      border: 1px solid #111;
+      margin-bottom: 20px;
+      padding: 15px 20px;
+      transition: 0.5s; }
+      #comments .inner li::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #comments .inner li a {
+        font: 12px/1 'arial';
+        color: #555;
+        float: left;
+        transition: 0.5s; }
+      #comments .inner li span {
+        font: 12px/1 'arial';
+        color: #888;
+        float: right;
+        transition: 0.5s; }
+      #comments .inner li:hover {
+        background: #444; }
+        #comments .inner li:hover a {
+          color: #fff; }
+        #comments .inner li:hover span {
+          color: #ddd; }
+
+/* footer --------------------------------*/
+#footer {
+  width: 100%;
+  padding: 100px 0;
+  background: #444; }
+  #footer .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #footer .inner::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #footer .inner h1 {
+      font: bold 24px/1 'arial';
+      color: #666;
+      float: left; }
+    #footer .inner ul {
+      float: right; }
+      #footer .inner ul li {
+        float: left;
+        margin-left: 20px; }
+        #footer .inner ul li a {
+          font: bold 14px/1 'arial';
+          color: #666; }
+    #footer .inner address {
+      width: 100%;
+      float: left;
+      font: 14px/1.3 'arial';
+      color: #777;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border-top: 1px solid #888;
+      padding-top: 20px; }
+    #footer .inner p {
+      font: 12px/1 'arial';
+      color: #777;
+      width: 100%;
+      float: left; }
+
+/*# sourceMappingURL=style.css.map */
