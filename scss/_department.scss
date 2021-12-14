@@ -4,7 +4,7 @@
 
     .sub_visual{
         width: 100%;
-        height: 600px;
+        height: 400px;
         position: relative;
         overflow: hidden;
         background:rgba(164, 187, 190, 0.863);
@@ -18,7 +18,7 @@
                 width: 1180px;
                 text-align: center;
                 position:absolute; 
-                bottom: 46%; left: 50%;
+                bottom: 48%; left: 50%;
                 transform: translateX(-50%);
                 opacity: 0.9;
     
@@ -27,13 +27,13 @@
                     font:normal 40px/1.2 'EB Garamond'; 
                     color:#fff; 
                     letter-spacing: 3px;
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                     // filter: blur(0.3px);
                     // text-shadow: 1px 1px 1.2px  #fff;
                 }
                 >p{
                     text-align: center;
-                    font: normal 18px/50px 'EB Garamond'; 
+                    font: normal 18px/30px 'EB Garamond'; 
                     color:rgba(238, 238, 238, 0.781); 
 
                     &::after{
@@ -41,7 +41,7 @@
                         display:block; 
                         width:75px; 
                         height:2px; 
-                        background:rgba(221, 221, 221, 0.527); 
+                        background:rgba(221, 221, 221, 0.938); 
                         transition:1s; 
                         position: absolute;
                         bottom: -50px; right: 50%;
