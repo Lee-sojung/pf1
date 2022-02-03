@@ -31,12 +31,16 @@
                 a{
                     display:inline-block; 
                     padding:14px 40px; 
-                    font:bold 15px/1 'arial'; 
+                    font:normal 15px/1 'arial'; 
                     color:#777; 
 
                     &:hover{
                         background-color:#555; 
                         color:#fff;
+                    }
+
+                    &.on{
+                        font:bold 15px/1 'arial'; 
                     }
                 }
             }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/gallery.js"></script>
+</head>
+
+<body>
+    <header id="header_sub">
+        <div class="inner">
+            <h1><a href="index.html">SJPF</a></h1>
+
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+
+                <ul class="util">
+                    <li><a href="#"><i class="fas fa-user"></i></a></li>
+                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="join.html"><i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+
+            <nav class="menuMo">
+                <h1>
+                    <a href="index.html">SJPF</a>
+                    <span>UI/UX DEVELOPMENT INSTITUTE</span>
+                </h1>
+
+                <ul id="gnbMo">
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="location.html">LOCATION</a></li>   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content_gallery">
+        <div class="sub_visual">
+            <img src="./img/wave3.jpeg" alt="">
+            <div class="inner_txt">
+                <h1>GALLERY</h1>
+                <p>Lorem ipsum dolor sit consectetur<br> adipisicing elit Commodi distinctio minus eveniet
+                </p>
+            </div>
+        </div>
+    </section>
+    <div id="gallery">
+        <article id="searchBox">
+            <input type="text" id="search" placeholder="검색어 입력">
+            <button class="btnSearch">Search</button>
+        </article>
+        <article id="wrap">
+            <img src="img/loading3.gif" class="loading">
+            <p class="errMsg"></p>
+            <ul id="list">
+                <!-- <li class="item">
+                    <div>
+                        <a href="큰이미지주소">
+                            <img src="썸네일이미지주소" alt="">
+                        </a>
+                        <p>이미지 제목</p>
+                    </div>
+                </li> -->
+            </ul>
+        </article>
+    </div>
+
+
+
+
+    <footer id="footer_sub">
+        <div class="inner">
+            <h1>SJPF</h1>
+
+            <ul>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">customer</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+            <address>
+                address:SJPF,60, Sajic-ro 8-gil, Jongro-gu. Seoul, Republic of Korea (Postal Code 03172)<br>
+                TEL : +82-2100-2114 FAX : +82-2100-7999
+            </address>
+
+            <p>Copyright &copy; 2021 SJPF All Right reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

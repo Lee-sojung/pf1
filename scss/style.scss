@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:wght@100&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 $tablet : 1179px;
 $mobile : 539px;
@@ -10,7 +10,9 @@ $mobile : 539px;
 @import 'department.scss';
 @import 'community.scss';
 @import 'join.scss';
-
+@import 'gallery.scss';
+@import 'youtube.scss';
+@import 'location.scss';
 
 
 
@@ -40,7 +42,7 @@ $mb:50px){
             bottom:15px; 
 
             a{
-                font:bold 24px/1 'arial'; 
+                font:bold 24px/1 'Roboto'; 
                 color:#444; 
             }
         }
@@ -56,7 +58,7 @@ $mb:50px){
                 a{
                     display:inline-block; 
                     padding:14px 40px; 
-                    font:bold 15px/1 'arial'; 
+                    font:normal 15px/1 'Roboto'; 
                     color:#777; 
 
                     &:hover{
@@ -77,7 +79,7 @@ $mb:50px){
                 margin-left:20px; 
 
                 a{
-                    font:12px/1 'arial';
+                    font:12px/1 'Roboto';
                     color:#999; 
                 }
             }
@@ -160,7 +162,7 @@ $mb:50px){
 
                 a{
                     display:block; 
-                    font:bold 24px/1 'arial'; 
+                    font:bold 24px/1 'Dosis'; 
                     color:#fff; 
                     text-align:center; 
                 }
@@ -294,7 +296,7 @@ $mb:50px){
                     }
                     p{
                         display: inline;
-                        font: 18px/1.2 "EB Garamond";
+                        font: 16px/1.2 "EB Garamond";
                         background: rgba(238, 238, 238, 0.315);
                         color: #bbb;
                         position: absolute;
@@ -338,7 +340,7 @@ $mb:50px){
                             }
                         }
                         >p{
-                            font: normal 19px/1.4 "EB Garamond";
+                            font: normal 18px/1.4 "EB Garamond";
                             color: #777;
                             display: inline;
                             background: rgba(238, 238, 238, 0.315);
@@ -366,6 +368,7 @@ $mb:50px){
                             width:100%; 
                             height:100%; 
                             object-fit:cover; 
+                            opacity: 0.8;
                         }
                     }
                     >h1{
@@ -398,7 +401,7 @@ $mb:50px){
                             }
                         }
                         >p{
-                            font: normal 19px/1.4 "EB Garamond";
+                            font: normal 18px/1.4 "EB Garamond";
                             color: #777;
                             display: inline;
                             background: rgba(238, 238, 238, 0.315);
@@ -410,7 +413,7 @@ $mb:50px){
                         bottom: 250px; left:35px;
                         transform: rotate(-90deg);
                         color: #bbb;
-                        font: 18px/1 "EB Garamond";
+                        font: 16px/1 "EB Garamond";
                     }
                 }
                 .box4{
@@ -436,7 +439,7 @@ $mb:50px){
                         width: 230px;
                         position: absolute;
                         top: 50%; right: 0px;
-                        font: normal 18px/1.2 "EB Garamond";
+                        font: normal 16px/1.2 "EB Garamond";
                         color: #bbb;
                         display: inline-block;
                         background: rgba(238, 238, 238, 0.315);
@@ -495,7 +498,7 @@ $mb:50px){
                         position: absolute;
                         bottom: 35%; right: 70px;
                         text-align: right;
-                        font: normal 18px/1.2 "EB Garamond";
+                        font: normal 16px/1.2 "EB Garamond";
                         color: #bbb;
                         display: inline;
                         background: rgba(238, 238, 238, 0.315);
@@ -516,7 +519,8 @@ $mb:50px){
                             width:100%; 
                             height:100%; 
                             object-fit:cover; 
-                            filter: grayscale(0.8);
+                            opacity: 0.8;
+                            
                         }
                     }
                     >h1{
@@ -549,7 +553,7 @@ $mb:50px){
                             }
                         }
                         >p{
-                            font: normal 19px/1.4 "EB Garamond";
+                            font: normal 18px/1.4 "EB Garamond";
                             color: #777;
                             display: inline;
                             background: rgba(238, 238, 238, 0.315);
@@ -561,7 +565,7 @@ $mb:50px){
                         bottom: 250px; right:35px;
                         transform: rotate(90deg);
                         color: #bbb;
-                        font: 18px/1 "EB Garamond";
+                        font: 16px/1 "EB Garamond";
                     }
                 }
             }
@@ -569,84 +573,59 @@ $mb:50px){
     }
 }
 
-/* brand --------------------------------*/
-#brand{
+/* journey --------------------------------*/
+#journey{
     width:100%; 
-    padding:100px 0 150px; 
-    background:rgba(238, 238, 238, 0.555); 
+    padding:0px 0 100px; 
 
     .inner{
         width:1180px; 
         margin:0 auto; 
 
-        h1{
-            font: normal 45px/1 "EB Garamond";
-            color: #555;
-            letter-spacing: 1.2px;
-            text-align: center;
-            margin-bottom: 80px;
-        }
-
         .wrap{
             width:100%; 
 
             article{
-                width: 370px;
-                height: 480px;
-                background: #333;
+                width: 260px;
+                height: 200px;
                 float: left;
-                margin-right: 30px;
+                margin-right: 50px;
                 transition: 1s;
                 position: relative;
+                word-break: break-all;
                 
 
-                &:last-child{
+                &:nth-of-type(3),&:nth-of-type(4){
+                    width: calc(1180px - 620px);
+                    height: 90px;
+                    margin-bottom: 15px;
                     margin-right: 0px;
-                }
-                &:hover img{
-                    filter: grayscale(1) brightness(40%);
-                }
-                &:hover h2{ opacity: 1; transition: 1.5s;}
-                &:hover p{opacity: 1; transition: 1s 0.2s;}
-                &:hover a{opacity: 1; transition: 1s 0.4s;}
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: 1s;
                 }
                 h2{
                     position: absolute;
-                    top: 30%; left: 30%;
-                    font: bold 30px/1 "EB Garamond";
-                    color: #fff;
-                    opacity: 1;
-                    opacity: 0;
+                    top: 0; left: 0;
+                    font: normal 24px/1.4 "Roboto";
+                    color: #555;
+
+                    &::before{
+                        content: "";
+                        display:block; 
+                        width:260px; 
+                        height:25px; 
+                        background:#ded6d4d0; 
+                        transition:1s; 
+                        position: absolute;
+                        top: 110px; left:0%;
+                        transform: translateY(-50%);
+                    }
                     
 
                 }
                 p{
-                    width: 280px;
-                    transform: translate(50%, -300px);
-                    font: normal 19px/1.2 "EB Garamond";
-                    color: #bbb;
-                    opacity: 1;
-                    text-align: center;
-                    transform: translateX(50px) translateY(-300px);
-                    opacity: 0;
-                }
-                a{
-                    display: block;
-                    width: 150px; height: 35px;
-                    border: 1px solid #eee;
-                    font: normal 14px/35px "arial";
-                    text-align: center;
-                    transform: translateX(110px) translateY(-250px);
-                    color: #eee;
-                    opacity: 0;
-
-                    &:hover{ background-color: #eee; color: #333;
-                    transition:0.5s }
+                    font: normal 15px/1.3 "Roboto";
+                    letter-spacing: 1px;
+                    color: #777;
+                    text-align: left;
                 }
             }
         }
@@ -656,9 +635,8 @@ $mb:50px){
 /* banner --------------------------------*/
 #banner{
     width:100%; 
-    padding:100px 0;
-    background:url(/img/My\ Life\ in\ the\ Countryside.jpeg) no-repeat center/cover fixed; 
-    filter: grayscale(0.8) brightness(0.6);
+    padding:140px 0;
+    background:url(/img/sea-banner.jpg) no-repeat center/cover fixed; 
     opacity: 0.9;
 
     .inner{
@@ -669,11 +647,13 @@ $mb:50px){
             font: italic 28px/1 "EB Garamond";
             color: #fff;
             text-align: center;
+            letter-spacing: 1px;
             transform: translateY(-20px);
             
         }
         p{
             font: italic 17px/1.3 'EB Garamond'; 
+            letter-spacing: 0.5px;
             color:#fff; 
             text-align: center;
             transform: translateY(20px);
@@ -681,10 +661,112 @@ $mb:50px){
     }
 }
 
+/* brand --------------------------------*/
+#brand{
+    width:100%; 
+    padding:150px 0 150px; 
+    background:#ded6d4d0; 
+
+    .inner{
+        width:1180px; 
+        margin:0 auto; 
+
+        .wrap{
+            width:100%; 
+
+            article{
+                width: 370px;
+                height: 410px;
+                background: #333;
+                float: left;
+                margin-right: 30px;
+                transition: 1s;
+                position: relative;
+                cursor: pointer;
+                
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover img{
+                    filter: grayscale(1) brightness(40%);
+                }
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 1s;
+                    opacity: 0.9;
+                }
+                .brandtxt{
+                    width: 100%; 
+                    height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-30%);
+                    text-align: center;
+                    opacity: 0;
+                    
+                    h2{
+                        
+                        font: normal 24px/1 "Roboto";
+                        margin-bottom: 40px;
+                        color: #fff;
+                        letter-spacing: 1px;
+
+                        &::before{
+                            content: "";
+                            display:block; 
+                            width:35px; 
+                            height:1px; 
+                            background:#eee; 
+                            position: absolute;
+                            left:45%; top: 43px;
+                            opacity: 0.6;
+                            transition:1s; 
+                        }
+                    }
+                    p{
+                        position: absolute;
+                        left: 15%;
+                        width: 70%;
+                        font: normal 15px/1.2 "Roboto";
+                        color: #bbb;
+                        margin-bottom: 30px;
+                        word-break: break-all;
+                        text-align: left;
+                        letter-spacing: 0.5px;
+                        
+                    }
+
+                    a{
+                        display: block;
+                        width: 150px; height: 35px;
+                        border: 1px solid #eee;
+                        font: normal 14px/35px "Roboto";
+                        text-align: center;
+                        color: #eee;
+                        transform: translate(110px,140px);
+    
+                        &:hover{ background-color: #eee; color: #333;
+                        transition:0.5s }
+                    }
+                    &:hover{opacity: 1; transition: 1s;}
+                    &:hover h2{transition: 1.5s;}
+                    &:hover p{transition-delay: 1.2s;}
+                }
+
+
+            }
+        }
+    }
+}
+
 /* project --------------------------------------------*/
 #project{
     width: 100%;
-    padding: 150px 0;
+    padding: 150px 0 150px;
 
     .inner{
         width: 1180px;
@@ -699,14 +781,14 @@ $mb:50px){
                 float: left;
                 margin-right: 30px;
                 border: 1px solid #eee;
-                border-bottom: 3px solid #888;
 
                 &:last-child{
                     margin-right: 0;
                     border: none;
+                    margin-left: 10px;
 
                     .line_txt{
-                        font: bold 24px/1 "EB Garamond";
+                        font: normal 24px/1 "Roboto";
                         color: #555;
                         letter-spacing: 1.4px;
 
@@ -714,29 +796,32 @@ $mb:50px){
                             content: "";
                             display:block; 
                             width:75px; 
-                            height:2px; 
-                            background:#555; 
+                            height:1px; 
+                            background:#777; 
                             transform: translateY(50px);
                             transition:1s; 
+                            opacity: 0.6;
                         }
                     }
                     >p{
-                        font-size: 18px;
+                        font-size: 15px;
                         line-height: 1.5;
                         text-align: left;
                         transform: translateY(50px);
                         word-break: break-all;
+                        letter-spacing: 0.5px;
+                        color: #777;
                     }
                     a{
                         display: block;
                         width: 200px; height: 35px;
-                        border: 1px solid #555;
-                        font: normal 13px/35px "arial";
-                        color: #555;
+                        border: 1px solid #777;
+                        font: normal 13px/35px "Roboto";
+                        color: #777;
                         text-align: center;
                         position: absolute;
                         top: 50%;
-                        letter-spacing: 1.2px;
+                        letter-spacing: 1px;
                         transition: 1s;
 
                         &:hover{
@@ -763,73 +848,126 @@ $mb:50px){
                 }
 
                 h2{
-                    font: bold 18px/1 "EB Garamond";
+                    font: normal 17px/1 "Roboto";
                     color: #555;
                     text-align: center;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
 
-                    &::before{
-                        content: "";
-                        display:block; 
-                        width:40px; 
-                        height:1px; 
-                        background:#555; 
-                        margin: 0 auto;
-                        transform: translateY(30px);
-                        transition:1s; 
-                    }
                 }
 
                 p{
-                    font: normal 16px/1 "EB Garamond";
+                    font: normal 15px/1 "Roboto";
                     color: #888;
                     text-align: center;
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                 }
             }
         }
     }
 } 
 
+/* healing_tour --------------------------------*/
+#healing_tour{
+    width:100%; 
+    padding:0px 0 100px; 
+
+    .inner{
+        width:1180px; 
+        margin:0 auto; 
+
+        .wrap{
+            width:100%; 
+
+            article{
+                width: 260px;
+                height: 200px;
+                float: left;
+                margin-right: 50px;
+                transition: 1s;
+                position: relative;
+                word-break: break-all;
+                
+
+                &:nth-of-type(3),&:nth-of-type(4){
+                    width: calc(1180px - 620px);
+                    height: 90px;
+                    margin-bottom: 15px;
+                    margin-right: 0px;
+                }
+                h2{
+                    position: absolute;
+                    top: 0; left: 0;
+                    font: normal 24px/1.4 "Roboto";
+                    color: #555;
+
+                    &::before{
+                        content: "";
+                        display:block; 
+                        width:260px; 
+                        height:25px; 
+                        background:#ded6d4d0; 
+                        transition:1s; 
+                        position: absolute;
+                        top: 110px; left:0%;
+                        transform: translateY(-50%);
+                    }
+                    
+
+                }
+                p{
+                    font: normal 15px/1.3 "Roboto";
+                    letter-spacing: 1px;
+                    color: #777;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
 /* swiper------------------------------------*/
 #b_box{
     width:100%; 
-    padding:0 0 150px 0; 
+    padding:0 0 150px;
 
     .banner_box{
-        width: 100%;
+        width: 1180px; height: 400px;
         margin: 0 auto;
+        position: relative;
     
-        &::after{
-            content: "";
-            display: block;
-            clear: both;
-        }
+        // &::after{
+        //     content: "";
+        //     display: block;
+        //     clear: both;
+        // }
     
         .left{
-            width: 40%;
-            height: 380px;
-            background: #444;
-            float: left;
-            position: relative;
+            width: 560px;
+            height: 320px;
+            background: #666;
+            // float: left;
+            position: absolute;
+            top: 30px; left: 0;
+            z-index: 5;
+            
     
     
             .inner{
                 position: absolute;
                 right: 10px;
-                padding: 80px 50px;
+                padding: 65px 50px;
                 width: 590px;
                 text-align: right;
     
                 &:hover ::before{
-                    width: 290px;
+                    width: 240px;
                 }
     
                 h1{
-                    font: bold 30px/1 "EB Garamond";
-                    letter-spacing: 1.4px;
+                    font: normal 24px/1.3 "Roboto";
+                    letter-spacing: 1px;
                     color: #eee;
-                    margin-bottom: 50px;
+                    margin-bottom: 40px;
     
     
     
@@ -837,17 +975,19 @@ $mb:50px){
                         content: "";
                         display:block; 
                         width:75px; 
-                        height:2px; 
-                        background:#777;
+                        height:1px; 
+                        background:#bbb;
                         transition:1s; 
                         position: absolute;
-                        right: 50px; top: 42%;
+                        right: 50px; top: 40%;
+                        opacity: 0.6;
                     }
                 }
                 p{
-                    font: 18px/1.2 "EB Garamond";
+                    font: 15px/1.2 "Roboto";
+                    letter-spacing: 0.5px;
                     color: #bbb;
-                    margin-bottom: 50px;
+                    margin-bottom: 40px;
                 }
     
     
@@ -855,9 +995,10 @@ $mb:50px){
                     display: block;
                     width: 120px;
                     height: 30px;
-                    border: 1px solid #eee;
-                    font:  13px/30px "arial";
-                    color: #bbb;
+                    border: 1px solid #bbb;
+                    font:  13px/30px "Roboto";
+                    letter-spacing: 0.5px;
+                    color: #ddd;
                     text-align: center;
                     position: absolute;
                     right: 50px;
@@ -875,11 +1016,14 @@ $mb:50px){
             width: 60%;
             height: 380px;
             background: #888;
-            float: left;
+            position: absolute;
+            top: 0%; right: 0;
+            // float: right;
     
             img{
                 width: 100%; height: 100%;
                 object-fit: cover;
+                opacity: 0.8;
             }
     
         }
@@ -893,7 +1037,9 @@ $mb:50px){
 /* comments --------------------------------*/
 #comments{
     width:100%; 
-    padding: 0px 0px 150px 0px; 
+    padding: 100px 0px 150px; 
+    background: #ded6d4d0;
+    
 
     .inner{
         width:1180px; 
@@ -932,7 +1078,7 @@ $mb:50px){
             }
 
             &:hover{
-                background:#444; 
+                background:#666; 
 
                 a{color:#fff;}
                 span{color:#ddd;}
