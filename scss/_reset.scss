@@ -15,6 +15,8 @@ table{
 fieldset{
     border:none; 
 }
+input, label { vertical-align: middle; }
+.h{ position:absolute; top:-9999px; opacity:0; }
 .hidden{ position:absolute; top:-9999px; opacity:0; }
 .wrap::after{
     content:''; 

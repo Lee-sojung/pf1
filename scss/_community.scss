@@ -103,7 +103,7 @@
             position: relative;
 
             #tab1{
-                display: none;
+                display: block;
                 h2{
                     text-align: right;
                     font: bold 38px/1 "arial";
@@ -377,7 +377,7 @@
             }
 
             #tab3{
-                // display: none;
+                display: none;
                 h2{
                     text-align: right;
                     font: bold 38px/1 "arial";

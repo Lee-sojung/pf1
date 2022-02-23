@@ -15,7 +15,7 @@ const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.interestingness.getList";
 const method2 = "flickr.photos.search";
 const key = "6e2610a4c016b707c3c32e51426e5408";
-const per_page = 80;
+const per_page = 65;
 const format = "json";
 
 //flickr.interestingness.getList method
