@@ -103,6 +103,7 @@
     .location{
             width: 100%;
         .inner{
+            width: 100%;
             #map{height: 400px;}
 
             .traffic{
@@ -132,6 +133,8 @@
         }
     }    
 }
+
+
 
 //지도 위에 버튼 올리려면 html map을 wrap으로 감싸서
 //position-realative 주고 , map에 position absoulte로 위치 주기

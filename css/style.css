@@ -2009,21 +2009,23 @@ input, label {
 
 /* tablet -------------------------------------*/
 @media screen and (max-width: 1179px) {
-  .join .inner table th {
-    display: none; }
-    .join .inner table th:last-child {
-      display: block;
-      width: 100%; }
-  .join .inner table input[type="text"],
-  .join .inner table input[type="password"] {
-    width: 50%; }
-  .join .inner table select {
-    width: 30%; }
-  .join .inner table textarea#comments {
-    width: 90%; }
-  .join .inner table .hobbyTxt,
-  .join .inner table .genderTxt {
-    display: block; } }
+  .join .inner {
+    width: 100%; }
+    .join .inner table th {
+      display: none; }
+      .join .inner table th:last-child {
+        display: block;
+        width: 100%; }
+    .join .inner table input[type="text"],
+    .join .inner table input[type="password"] {
+      width: 50%; }
+    .join .inner table select {
+      width: 30%; }
+    .join .inner table textarea#comments {
+      width: 90%; }
+    .join .inner table .hobbyTxt,
+    .join .inner table .genderTxt {
+      display: block; } }
 /* mobile -------------------------------------*/
 @media screen and (max-width: 539px) {
   .join .inner table th:last-child {
@@ -2736,31 +2738,33 @@ figure.pop {
 @media screen and (max-width: 1179px) {
   .location {
     width: 100%; }
-    .location .inner #map {
-      height: 400px; }
-    .location .inner .traffic {
+    .location .inner {
       width: 100%; }
-      .location .inner .traffic li {
-        margin-right: 2%;
-        width: 49%;
-        height: 40px; }
-        .location .inner .traffic li a {
-          width: 100%;
-          height: 100%; }
-        .location .inner .traffic li:nth-of-type(2) {
-          margin-right: 0; }
-    .location .inner .branch {
-      float: right;
-      width: 100%; }
-      .location .inner .branch li {
-        width: 32%;
-        margin-left: 0px;
-        margin-right: 2%; }
-        .location .inner .branch li a {
-          width: 100%;
-          height: 100%; }
-        .location .inner .branch li:nth-of-type(3) {
-          margin-right: 0; } }
+      .location .inner #map {
+        height: 400px; }
+      .location .inner .traffic {
+        width: 100%; }
+        .location .inner .traffic li {
+          margin-right: 2%;
+          width: 49%;
+          height: 40px; }
+          .location .inner .traffic li a {
+            width: 100%;
+            height: 100%; }
+          .location .inner .traffic li:nth-of-type(2) {
+            margin-right: 0; }
+      .location .inner .branch {
+        float: right;
+        width: 100%; }
+        .location .inner .branch li {
+          width: 32%;
+          margin-left: 0px;
+          margin-right: 2%; }
+          .location .inner .branch li a {
+            width: 100%;
+            height: 100%; }
+          .location .inner .branch li:nth-of-type(3) {
+            margin-right: 0; } }
 /* header --------------------------------*/
 #header {
   width: 100%;
@@ -3638,7 +3642,7 @@ figure.pop {
       width: 100%;
       float: left; }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1179px) {
   /* header --------------------------------*/
   #header {
     width: 100%;
@@ -3711,7 +3715,7 @@ figure.pop {
     width: 100%;
     padding: 100px 0 150px; }
     #news .inner {
-      width: 1180px;
+      width: 100%;
       margin: 0 auto; }
       #news .inner .wrap {
         width: 100%; }
@@ -3985,7 +3989,7 @@ figure.pop {
     width: 100%;
     padding: 0px 0 100px; }
     #journey .inner {
-      width: 1180px;
+      width: 100%;
       margin: 0 auto; }
       #journey .inner .wrap {
         width: 100%; }
@@ -4371,41 +4375,8 @@ figure.pop {
 
   /* footer --------------------------------*/
   #footer {
-    width: 100%;
-    padding: 100px 0;
-    background: #444; }
+    padding: 80px 30px; }
     #footer .inner {
-      width: 1180px;
-      margin: 0 auto; }
-      #footer .inner::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #footer .inner h1 {
-        font: bold 24px/1 'arial';
-        color: #666;
-        float: left; }
-      #footer .inner ul {
-        float: right; }
-        #footer .inner ul li {
-          float: left;
-          margin-left: 20px; }
-          #footer .inner ul li a {
-            font: bold 14px/1 'arial';
-            color: #666; }
-      #footer .inner address {
-        width: 100%;
-        float: left;
-        font: 14px/1.3 'arial';
-        color: #777;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        border-top: 1px solid #888;
-        padding-top: 20px; }
-      #footer .inner p {
-        font: 12px/1 'arial';
-        color: #777;
-        width: 100%;
-        float: left; } }
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
