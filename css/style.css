@@ -1692,14 +1692,28 @@ aside {
   #gallery #searchBox {
     padding: 50px 0px 0px; }
     #gallery #searchBox input[type="text"] {
-      width: 100%; }
+      width: 40%; }
     #gallery #searchBox .btnSearch {
-      width: 100%;
-      margin-left: 0px;
-      margin-top: 10px; }
+      width: 30%;
+      margin-left: 10px;
+      margin-top: 0px;
+      margin-right: 20px; }
   #gallery #wrap #list li {
     width: calc(100% / 2); } }
 @media screen and (max-width: 439px) {
+  #gallery #searchBox {
+    padding: 50px 0px 0px; }
+    #gallery #searchBox input[type="text"] {
+      width: 60%;
+      margin-right: 20px; }
+    #gallery #searchBox .btnSearch {
+      width: 60%;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-right: 20px; }
+  #gallery #wrap #list li {
+    width: calc(100% / 2); }
+
   #gallery #wrap #list li {
     width: calc(100% / 1); } }
 .content_youtube {
