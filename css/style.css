@@ -3670,7 +3670,7 @@ figure.pop {
       object-fit: cover;
       filter: contrast(80%) grayscale(0.8); }
     #visual .inner {
-      width: 1180px;
+      width: 90%;
       margin: 0 auto;
       position: absolute;
       top: 50%;
