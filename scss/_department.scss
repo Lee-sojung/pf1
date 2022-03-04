@@ -488,18 +488,19 @@
             z-index:1;   
             margin: 0 auto;
             padding: 50px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-content:space-between ;
+            flex-wrap: wrap;
     
             article{
-                float: left;
                 width: 310px; height: 320px;
-                margin-right: 120px;
                 cursor: pointer;
                 opacity:0.9; 
                 transition:1s; 
                 position:relative; 
                 z-index:1; 
                 margin-bottom: 100px;
-                &:nth-of-type(3), &:nth-of-type(6),&:nth-of-type(9){margin-right: 0;}
     
     
                 &::before{
@@ -684,13 +685,26 @@
 }
 
 @media screen and (max-width: 1179px){
+    /*vusual ----------------------------------------------*/
+#visual_department{
+    width: 100%;
+    .sub_visual{
+        width: 100%;
+            .inner_txt{
+                width: 100%;
+                
+            }
+
+    }
+}
 /*about-------------------------------------------*/
 #about{
     width: 100%;
     background:rgba(238, 238, 238, 0.555); 
 
     .inner{
-        width: 90%;
+        padding: 0 40px;
+        width: 100%;
         margin: 0 auto;
         position: relative;
 
@@ -1009,9 +1023,10 @@
                     }
                 }
                 .ceo_icon{
-                    
+                    width: 50%;
                     margin-bottom:35px;
-
+                    margin: 0 auto;
+                    
                     &::after{
                         content: "";
                         display: block;
@@ -1019,7 +1034,7 @@
                     }
 
                     >i{
-                        transform: translateX(123px);
+                        transform: translateX(0px);
                         float: left;
                         display: block;
                         text-align: center;
@@ -1082,6 +1097,7 @@
         }
     }
 }
+
 /* member --------------------------------*/
 #member{
     width:100%; 
@@ -1090,8 +1106,8 @@
 
     .member_inner{
         width: 100%;
+        padding: 0 40px;
         margin: 0 auto;
-        padding: 0 60px;
 
         >h1{
             font:bold 30px/1 'EB Garamond'; 
@@ -1121,21 +1137,22 @@
             position:relative; 
             z-index:1;   
             margin: 0 auto;
-            padding: 50px 0px;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-content:space-between ;
+            flex-wrap: wrap;
     
             article{
-                margin: 0 auto;
-                float: left;
-                width: 40%; height: 320px;
-                margin-right: 40px;
+                width: 400px; height: 320px;
+                margin-right: 0px;
                 cursor: pointer;
                 opacity:0.9; 
                 transition:1s; 
                 position:relative; 
                 z-index:1; 
                 margin-bottom: 100px;
-                &:nth-of-type(2), &:nth-of-type(4),&:nth-of-type(6){margin-right: 0;}
-                &:nth-of-type(3){ margin-right: 40px;}
+                &:nth-of-type(3), &:nth-of-type(6){margin-right: 0;}
     
     
                 &::before{
@@ -1164,13 +1181,14 @@
                     }
     
                     .txt{
+                        z-index: 9;
                         width: 100%; height: 100%;
                         transform: rotate(-90deg);
                         display: flex;
                         transition: 0.5s;
                         letter-spacing: 1.2px;
                         position: absolute;
-                        bottom: 0%; left: -10%;
+                        bottom:10px; left: -40px;
                         
     
                         h2{
@@ -1268,59 +1286,14 @@
 /*newsletter-----------------------------------------*/
 #newsletter{
     width: 100%;
-    padding: 100px 0;
-    background: rgba(207, 207, 207, 0.555);
     .inner{
-        width: 90%;
-        margin: 0 auto;
-
-        h1{
-            font:bold 30px/1 'EB Garamond'; 
-            color:#333; 
-            letter-spacing: 3px;
-            margin-bottom: 50px;
-            text-align: center;
-            margin-bottom: 30px;
-            position: relative;
-        }
-        p{
-            font: normal 18px/1.3 'EB Garamond'; 
-            color:#555; 
-            letter-spacing: 0.6px;
-            text-align: center;
-        }
-
-        .wrap{
-            width:100%; 
-            margin-top: 40px;
-            text-align: center;
-
-            input{ 
-                width: 18%; height: 30px;
-                margin-right: 20px;
-                border: none;
-                border-bottom: 1px solid #555;
-                background-color: unset;
-                &:last-child{
-                    transition: 1s;
-                    border: 1px solid #555;
-                    width: 10%;
-                    cursor: pointer;
-                    font: normal 14px/1 "arial" ;
-                    color: #555;
-
-                    &:hover{
-                        background-color: #555;
-                        color: #eee;
-                    }
-                }
-            }
-        }
+        width: 100%;
     }
 }
 }
 
-@media screen and (max-width: 1047px){
+@media screen and (max-width: 1024px){
+
     /*about-------------------------------------------*/
     #about{
         width: 100%;
@@ -1334,8 +1307,8 @@
     
             .welcome{
                 background: #fff;
-                padding: 60px 70px;
-                width: 100%;
+                padding: 60px 60px 80px;
+                width: 100%; 
                 position: absolute;
                 top:-70px;
                 position: relative;
@@ -1361,7 +1334,7 @@
                 }
     
                 >.pic{
-                    width: 43%; height: 470px;
+                    width: 100%; height: 350px;
                     float: left;
                     position: relative;
                 
@@ -1385,9 +1358,10 @@
     
     
                 .welcome_txt{
+                    margin-top: 50px;
                     text-align: center;
                     float: right;
-                    width: 50%; height: 490px;
+                    width: 100%; height: auto;
                     margin-right: 0;
                     position: relative;
     
@@ -1420,7 +1394,7 @@
                         font: normal 13px/35px "arial";
                         color: #555;
                         text-align: center;
-                        margin-top: 40px;
+                        margin-top: 50px;
                         letter-spacing: 1.2px;
                         transition: 1s;
                         >i{margin-left: 5px;}
@@ -1436,179 +1410,513 @@
     
         }
     }
-    /*our story ---------------------------------------------*/
-    #ourstory{
+/*our story ---------------------------------------------*/
+#ourstory{
+    width:100%; 
+    background: rgba(238, 238, 238, 0.555); 
+    position: relative;
+    padding: 0 0 100px;
+
+    .inner{
         width:100%; 
-        background: rgba(238, 238, 238, 0.555); 
-        position: relative;
-        padding: 0 0 100px;
-    
-        .inner{
-            width:100%; 
-            margin:0 auto;
-    
-            >.wrap{
-                margin: 0 auto;
-                width:90%; 
-                display: flex;
+        margin:0 auto;
+
+        >.wrap{
+            margin: 0 auto;
+            width:90%; 
+            display: flex;
+            position: relative;
+
+            >.story_txt{
+                width: 40%;
                 position: relative;
-    
-                >.story_txt{
-                    width: 40%;
-                    position: relative;
-                    margin-right: 100px;
-                    transform: translateY(30px);
-                    
-                    >.left{
-                        font-size: 30px;
-                        color: #bbb;
-                    }
-                    >.right{
-                        font-size: 30px;
-                        color: #bbb;
-                        position: absolute;
-                        right: 0;
-                    }
-                    h2{
-                        font:bold 28px/1.3 'EB Garamond'; 
-                        color:#777; 
-                        letter-spacing: 2px;
-                        margin-left: 45px;
-                        margin-right: 20px;
-                        margin-top: 10px;
-                    }
-                    p{
-                        font:normal 15px/1 'EB Garamond'; 
-                        color:#aaa; 
-                        letter-spacing: 2px;
-                        margin-left: 45px;
-                        margin-top: 30px;
-                    }
-    
-    
+                margin-right: 100px;
+                transform: translateY(30px);
+                
+                >.left{
+                    font-size: 30px;
+                    color: #bbb;
                 }
-                >.pic{
+                >.right{
+                    font-size: 30px;
+                    color: #bbb;
+                    position: absolute;
+                    right: 0;
+                }
+                h2{
+                    font:bold 28px/1.3 'EB Garamond'; 
+                    color:#777; 
+                    letter-spacing: 2px;
+                    margin-left: 45px;
+                    margin-right: 20px;
+                    margin-top: 10px;
+                }
+                p{
+                    font:normal 15px/1 'EB Garamond'; 
+                    color:#aaa; 
+                    letter-spacing: 2px;
+                    margin-left: 45px;
+                    margin-top: 30px;
+                }
+
+
+            }
+            >.pic{
+                
+                width: 60%; height: 300px;
+
+                >img{
+                    width: 100%; 
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(0.6)
+                }
+                
+            }
+        }
+    }
+}
+
+/*surv-------------------------------------*/
+#surv{
+    background-color:#ded6d4d0;
+    width: 100%;
+    padding: 100px 0;
+
+    .inner{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .wrap{
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+
+            article{
+                position: relative;
+                width: 33.3%;
+                height: 200px;
+                align-items: center;
+                justify-content: center;
+                margin-right: 60px;
+
+                &:last-child{margin-right: 0;}
+
+                >.txt{
+                    width: 370px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 7;
                     
-                    width: 60%; height: 300px;
-    
-                    >img{
-                        width: 100%; 
-                        height: 100%;
-                        object-fit: cover;
-                        filter: grayscale(0.6)
+                    >a{
+                        display: block;
+                        text-align: center;
+                        width: 50px; height: 50px;
+                        border-radius: 50%;
+                        font-size: 18px;
+                        line-height: 51px;
+                        background-color: #fff;
+                        color: #999;
+                        margin-bottom: 20px;
+                        box-shadow: 2px 2px 4px #ccc;
                     }
+
+                    >h2{
+                        font: bold 23px/1.3 'EB Garamond'; 
+                        color:#333; 
+                        letter-spacing: 1.2px;
+                        position: relative;
+                        
+                        
+                        &::before{
+                            content: "";
+                            display:block; 
+                            width:90px; 
+                            height:2px; 
+                            background:#333; 
+                            transition:1s; 
+                            position: absolute;
+                            top: 50px; left:0;
+                            
+                        }
+                    }
+                    >p{  
+                        width: 69%;
+                        word-break: break-all;
+                        font: normal 19px/1.3 'EB Garamond'; 
+                        color:#888; 
+                        letter-spacing: 0.3px;
+                        margin-left: 0px;
+                        margin-top: 10%;
+                    }
+                }
+                >span{
+                    font: 200px/1 "arial";
+                    color: #fff;
+                    position: absolute;
+                    right: 0; bottom: 10%;opacity: 0.2;
+                }               
+            }
+        }
+    }
+}
+
+/*ceo-------------------------------------------*/
+#ceo{
+    width: 100%; 
+    // background:rgba(238, 238, 238, 0.555); 
+    background: url(/img/Ocean_Split.jpeg) no-repeat;
+    filter: grayscale(0.5);
+    background-size: cover;
+    padding: 100px 0 100px;
+    position: relative;
+
+    .inner{
+        width: 100%; height: auto;
+        padding: 0 40px;
+        margin: 0;
+
+        .wrap{
+            width: 100%;
+            background: #fff;
+            padding: 60px 70px;
+            position: relative;
+
+            &::before{
+
+                content: "";
+                display:none; 
+                width:1px; 
+                height:490px; 
+                background:rgba(175, 175, 175, 0.219); 
+                transition:1s; 
+                position: absolute;
+                top: 50%; right:50%;
+                transform: translateY(-50%);
+            }
+
+            .ceo_txt{
+                text-align: center;
+                float: none;
+                width: 100%;
+                height: auto;
+                position: relative;
+
+
+                h1{
+                    font:bold 30px/1 'EB Garamond'; 
+                    color:#333; 
+                    letter-spacing: 3px;
+                    margin-bottom: 25px;
+
+                    &::before{
+                        content: "";
+                        display:none; 
+                        width:200px; 
+                        height:1px; 
+                        background:rgba(153, 153, 153, 0.527); 
+                        transition:1s; 
+                        position: absolute;
+                        top: 55px; right:29%;
+                    }
+                }
+                .ceo_icon{
+                    display: none;
+                    width: 50%;
+                    margin-bottom:35px;
+                    margin: 0 auto;
                     
+                    &::after{
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+
+                    >i{
+                        transform: translateX(0px);
+                        float: left;
+                        display: block;
+                        text-align: center;
+                        border: 0.5px solid #777;
+                        border-radius: 50%;
+                        width: 28px; height: 28px;
+                        line-height: 27px;
+                        font-size: 16px;
+                        color: #777;
+                        margin: 20px 10px;
+                        cursor: pointer;
+                        transition: 0.5s;
+
+                        &:hover{
+                            background-color: #777;
+                            color: #eee;
+                            border: none;
+                        }
+                    }
+                }
+
+                p{
+                    word-break: break-all;
+                    font: normal 18px/1.3 'EB Garamond'; 
+                    color:#777; 
+                    letter-spacing: 0.6px;
+                    text-align: left;
+                    margin-bottom: 50px;
+                }
+                a{
+
+                    display: block;
+                    width: 200px; height: 35px;
+                    border: 1px solid #555;
+                    font: normal 13px/35px "arial";
+                    color: #555;
+                    text-align: center;
+                    margin-left: 0;
+                    margin: 0 auto;
+                    letter-spacing: 1.2px;
+                    transition: 1s;
+                    >i{margin-left: 5px;}
+
+                    &:hover{
+                        background: #555;
+                        color: #eee;
+                    }
+                }
+
+            }
+            .ceopic{
+                width: 100%; height: 490px;
+                float: none;
+                border: 1px solid rgba(153, 153, 153, 0.527);
+                margin-bottom: 50px;
+
+                .ceoimg1{
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                    filter: saturate(120%);
                 }
             }
         }
     }
-    
-    /*surv-------------------------------------*/
-    #surv{
-        background-color:#ded6d4d0;
+}
+
+/* member --------------------------------*/
+#member{
+    width:100%; 
+    padding-top: 10%;
+    background-color:  rgba(238, 238, 238, 0.555);
+
+    .member_inner{
         width: 100%;
-        padding: 100px 0;
+        padding: 0 40px;
+        margin: 0 auto;
+
+        >h1{
+            font:bold 30px/1 'EB Garamond'; 
+            color:#333; 
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+            text-align: right;
+            margin-bottom: 50px;
+            position: relative;
+
+            &::before{
+                content: "";
+                display:block; 
+                width:60%; 
+                height:1px; 
+                background:rgba(153, 153, 153, 0.527); 
+                transition:1s; 
+                position: absolute;
+                top: 20px; left:0%;
+                transform: translateY(-50%);
+            }
+        }
+    
+        .wrap{
+            width:100%; 
+            height: 100%;
+            position:relative; 
+            z-index:1;   
+            margin: 0 auto;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-content:space-between ;
+            flex-wrap: wrap;
+    
+            article{
+                width: 40%; height: 320px;
+                margin-right: 0px;
+                cursor: pointer;
+                opacity:0.9; 
+                transition:1s; 
+                position:relative; 
+                z-index:1; 
+                margin-bottom: 100px;
+                &:nth-of-type(3), &:nth-of-type(6){margin-right: 0;}
+    
+    
+                &::before{
+                    content: "";
+                    display:block; 
+                    width:100%; 
+                    height:100%; 
+                    background:#555; 
+                    position:absolute; 
+                    top:50px; 
+                    left:-150px; 
+                    opacity:0; 
+                    transition:1s; 
+                }
+    
+                .inner{
+                    width:100%; 
+                    height:100%; 
+                    position:relative; 
+                    margin: 0 auto;
+    
+                    &::after{
+                        content:''; 
+                        display:block; 
+                        clear:both; 
+                    }
+    
+                    .txt{
+                        z-index: 9;
+                        width: 100%; height: 100%;
+                        transform: rotate(-90deg);
+                        display: flex;
+                        transition: 0.5s;
+                        letter-spacing: 1.2px;
+                        position: absolute;
+                        bottom:10px; left: -40px;
+                        
+    
+                        h2{
+                            font:bold 18px/1 'EB Garamond';
+                            color:#333; 
+                            transition:1s; 
+                            margin-right: 10px;
+                        }
+    
+                        p{
+                            font:14px/18px 'EB Garamond'; 
+                            color:#999; 
+                        }
+                    }
+    
+                    figure{
+                        transform-origin: center;
+                        width:100%; 
+                        height:100%; 
+                        background:#777; 
+                        transition:1s; 
+                        box-shadow:5px 5px 30px rgba(0,0,0,0.3);
+                        position:relative; 
+                        overflow:hidden; 
+                        margin-bottom: 15px;
+                        filter: saturate(30%);
+                        
+    
+                        img{
+                            width:100%; 
+                            height:100%; 
+                            object-fit:cover; 
+                        }
+                    }
+    
+                    .icon{
+                        width: 100%;
+    
+                        a{  
+                            float: left;
+                            display: block;
+                            text-align: center;
+                            border: 0.5px solid #555;
+                            border-radius: 50%;
+                            width: 24px; height: 24px;
+                            margin-right: 5px;
+                            line-height: 24px;
+                            font-size: 14px;
+                            color: #555;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+    
+                &:hover{
+    
+                    &::before{
+                        left: -50px;
+                        opacity: 1;
+                    }
+    
+                    figure{
+                        transform: scale(1.03);
+                        filter: saturate(120%);
+                    }
+    
+                    .txt h2{
+                        color: #eee;
+                    }
+                    .txt p{
+                        color: #999;
+                    }
+    
+                    .icon a{
+                        background-color: #eee;
+                        border: none;
+                        line-height: 25px;
+                        transition: 0.5s;
+    
+                        &:hover{
+                            transform: scale(1.2);
+                            
+                        }
+                    }
+                }
+    
+            }
+        }
+
+    }
+
+
+}
+
+/*newsletter-----------------------------------------*/
+#newsletter{
+    width: 100%;
+    .inner{
+        width: 100%;
+    }
+}
+}
+
+@media screen and (max-width: 858px){
+
+    /*about-------------------------------------------*/
+    #about{
+        width: 100%;
+        background:rgba(238, 238, 238, 0.555); 
     
         .inner{
             width: 100%;
             margin: 0 auto;
             position: relative;
-    
-            .wrap{
-                margin: 0 auto;
-                width: 90%;
-                display: flex;
-    
-                article{
-                    position: relative;
-                    width: 33.3%;
-                    height: 200px;
-                    align-items: center;
-                    justify-content: center;
-                    margin-right: 60px;
-    
-                    &:last-child{margin-right: 0;}
-    
-                    >.txt{
-                        width: 370px;
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        z-index: 7;
-                        
-                        >a{
-                            display: block;
-                            text-align: center;
-                            width: 50px; height: 50px;
-                            border-radius: 50%;
-                            font-size: 18px;
-                            line-height: 51px;
-                            background-color: #fff;
-                            color: #999;
-                            margin-bottom: 20px;
-                            box-shadow: 2px 2px 4px #ccc;
-                        }
-    
-                        >h2{
-                            font: bold 23px/1.3 'EB Garamond'; 
-                            color:#333; 
-                            letter-spacing: 1.2px;
-                            position: relative;
-                            
-                            
-                            &::before{
-                                content: "";
-                                display:block; 
-                                width:90px; 
-                                height:2px; 
-                                background:#333; 
-                                transition:1s; 
-                                position: absolute;
-                                top: 50px; left:0;
-                                
-                            }
-                        }
-                        >p{  
-                            width: 69%;
-                            word-break: break-all;
-                            font: normal 19px/1.3 'EB Garamond'; 
-                            color:#888; 
-                            letter-spacing: 0.3px;
-                            margin-left: 0px;
-                            margin-top: 10%;
-                        }
-                    }
-                    >span{
-                        font: 200px/1 "arial";
-                        color: #fff;
-                        position: absolute;
-                        right: 0; bottom: 10%;opacity: 0.2;
-                    }               
-                }
-            }
-        }
-    }
-    
-    /*ceo-------------------------------------------*/
-    #ceo{
-        width: 100%; 
-        // background:rgba(238, 238, 238, 0.555); 
-        background: url(/img/Ocean_Split.jpeg) no-repeat;
-        filter: grayscale(0.5);
-        background-size: cover;
-        padding: 100px 0 100px;
-        position: relative;
-    
-        .inner{
-            width: 100%; height: 440px;
             padding: 0 40px;
-            margin: 0 auto;
     
-            .wrap{
-                width: 100%;
+            .welcome{
                 background: #fff;
-                padding: 60px 70px;
+                padding: 60px 60px 80px;
+                width: 100%; 
+                position: absolute;
+                top:-70px;
                 position: relative;
+    
     
                 &::before{
                     content: "";
@@ -1622,342 +1930,576 @@
                     transform: translateY(-50%);
                 }
     
-                .ceo_txt{
+                
+                &::after{
+                    content:''; 
+                    display:block; 
+                    clear:both; 
+                }
+    
+                >.pic{
+                    width: 100%; height: 350px;
+                    float: left;
+                    position: relative;
+                
+    
+                    
+                    .img1{
+                        position: absolute;
+                        bottom: 0;
+                        width: 80%; height: 90%;
+                        object-fit: cover;
+                        opacity: 0.8;
+                    }
+                    .img2{
+                        position: absolute;
+                        right: 0;
+                        width: 80%; height: 90%;
+                        object-fit: cover;
+    
+                    }
+                }
+    
+    
+                .welcome_txt{
+                    margin-top: 50px;
                     text-align: center;
                     float: right;
-                    width: 50%;
-                    height: 490px;
+                    width: 100%; height: auto;
+                    margin-right: 0;
                     position: relative;
-    
     
                     h1{
                         font:bold 30px/1 'EB Garamond'; 
                         color:#333; 
                         letter-spacing: 3px;
                         margin-bottom: 25px;
-    
-                        &::before{
-                            content: "";
-                            display:block; 
-                            width:200px; 
-                            height:1px; 
-                            background:rgba(153, 153, 153, 0.527); 
-                            transition:1s; 
-                            position: absolute;
-                            top: 55px; right:29%;
-                        }
                     }
-                    .ceo_icon{
-                        
-                        margin-bottom:35px;
-    
-                        &::after{
-                            content: "";
-                            display: block;
-                            clear: both;
-                        }
-    
-                        >i{
-                            transform: translateX(123px);
-                            float: left;
-                            display: block;
-                            text-align: center;
-                            border: 0.5px solid #777;
-                            border-radius: 50%;
-                            width: 28px; height: 28px;
-                            line-height: 27px;
-                            font-size: 16px;
-                            color: #777;
-                            margin: 20px 10px;
-                            cursor: pointer;
-                            transition: 0.5s;
-    
-                            &:hover{
-                                background-color: #777;
-                                color: #eee;
-                                border: none;
-                            }
-                        }
+                    h2{
+                        font:normal 20px/2.5 'EB Garamond'; 
+                        color:#555; 
+                        letter-spacing: 1.5px;
+                        margin-bottom: 35px;
+                        border-top: 1px solid rgba(153, 153, 153, 0.527); 
+                        border-bottom: 1px solid rgba(153, 153, 153, 0.527);
                     }
-    
                     p{
                         word-break: break-all;
                         font: normal 18px/1.3 'EB Garamond'; 
                         color:#777; 
                         letter-spacing: 0.6px;
                         text-align: left;
-                        margin-bottom: 30px;
                     }
-                    a{
+                    >a{
+                        margin: 0 auto;
                         display: block;
                         width: 200px; height: 35px;
                         border: 1px solid #555;
                         font: normal 13px/35px "arial";
                         color: #555;
                         text-align: center;
-                        margin-left: 25%;
+                        margin-top: 50px;
                         letter-spacing: 1.2px;
                         transition: 1s;
                         >i{margin-left: 5px;}
     
                         &:hover{
-                            background: #555;
+                            background: #333;
                             color: #eee;
                         }
                     }
-    
                 }
-                .ceopic{
-                    width: 45%; height: 490px;
-                    float: left;
-                    border: 1px solid rgba(153, 153, 153, 0.527);
+            }
+        
     
-                    .ceoimg1{
-                        width: 100%; height: 100%;
-                        object-fit: cover;
-                        filter: saturate(120%);
+        }
+    }
+/*our story ---------------------------------------------*/
+#ourstory{
+    width:100%; 
+    background: rgba(238, 238, 238, 0.555); 
+    position: relative;
+    padding: 0 0 100px;
+
+    .inner{
+        width:100%; 
+        margin:0 auto;
+
+        >.wrap{
+            margin: 0 auto;
+            width:90%; 
+            display: flex;
+            position: relative;
+
+            >.story_txt{
+                width: 40%;
+                position: relative;
+                margin-right: 100px;
+                transform: translateY(30px);
+                
+                >.left{
+                    font-size: 30px;
+                    color: #bbb;
+                }
+                >.right{
+                    font-size: 30px;
+                    color: #bbb;
+                    position: absolute;
+                    right: 0;
+                }
+                h2{
+                    font:bold 28px/1.3 'EB Garamond'; 
+                    color:#777; 
+                    letter-spacing: 2px;
+                    margin-left: 45px;
+                    margin-right: 20px;
+                    margin-top: 10px;
+                }
+                p{
+                    font:normal 15px/1 'EB Garamond'; 
+                    color:#aaa; 
+                    letter-spacing: 2px;
+                    margin-left: 45px;
+                    margin-top: 30px;
+                }
+
+
+            }
+            >.pic{
+                
+                width: 60%; height: 300px;
+
+                >img{
+                    width: 100%; 
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(0.6)
+                }
+                
+            }
+        }
+    }
+}
+
+/*surv-------------------------------------*/
+#surv{
+    background-color:#ded6d4d0;
+    width: 100%;
+    padding: 80px 0;
+
+    .inner{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .wrap{
+            padding: 0 50px;
+            margin: 0 auto;
+            width: 100%;
+            display: block;
+
+            article{
+                margin-top: 60px;
+                position: relative;
+                width: 100%;
+                height: 200px;
+                margin-right: 0px;
+
+                &:last-child{margin-right: 0;}
+                &:nth-of-type(1){margin-top: 0px;}
+
+                >.txt{
+                    width: 370px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 7;
+                    
+                    >a{
+                        display: block;
+                        text-align: center;
+                        width: 50px; height: 50px;
+                        border-radius: 50%;
+                        font-size: 18px;
+                        line-height: 51px;
+                        background-color: #fff;
+                        color: #999;
+                        margin-bottom: 20px;
+                        box-shadow: 2px 2px 4px #ccc;
                     }
+
+                    >h2{
+                        font: bold 23px/1.3 'EB Garamond'; 
+                        color:#333; 
+                        letter-spacing: 1.2px;
+                        position: relative;
+                        
+                        
+                        &::before{
+                            content: "";
+                            display:block; 
+                            width:90px; 
+                            height:2px; 
+                            background:#333; 
+                            transition:1s; 
+                            position: absolute;
+                            top: 50px; left:0;
+                            
+                        }
+                    }
+                    >p{  
+                        width: 69%;
+                        word-break: break-all;
+                        font: normal 19px/1.3 'EB Garamond'; 
+                        color:#888; 
+                        letter-spacing: 0.3px;
+                        margin-left: 0px;
+                        margin-top: 10%;
+                    }
+                }
+                >span{
+                    font: 200px/1 "arial";
+                    color: #fff;
+                    position: absolute;
+                    right: 0; bottom: 10%;opacity: 0.2;
+                }               
+            }
+        }
+    }
+}
+
+/*ceo-------------------------------------------*/
+#ceo{
+    width: 100%; 
+    // background:rgba(238, 238, 238, 0.555); 
+    background: url(/img/Ocean_Split.jpeg) no-repeat;
+    filter: grayscale(0.5);
+    background-size: cover;
+    padding: 100px 0 100px;
+    position: relative;
+
+    .inner{
+        width: 100%; height: auto;
+        padding: 0 40px;
+        margin: 0;
+
+        .wrap{
+            width: 100%;
+            background: #fff;
+            padding: 60px 70px;
+            position: relative;
+
+            &::before{
+
+                content: "";
+                display:none; 
+                width:1px; 
+                height:490px; 
+                background:rgba(175, 175, 175, 0.219); 
+                transition:1s; 
+                position: absolute;
+                top: 50%; right:50%;
+                transform: translateY(-50%);
+            }
+
+            .ceo_txt{
+                text-align: center;
+                float: none;
+                width: 100%;
+                height: auto;
+                position: relative;
+
+
+                h1{
+                    font:bold 30px/1 'EB Garamond'; 
+                    color:#333; 
+                    letter-spacing: 3px;
+                    margin-bottom: 25px;
+
+                    &::before{
+                        content: "";
+                        display:none; 
+                        width:200px; 
+                        height:1px; 
+                        background:rgba(153, 153, 153, 0.527); 
+                        transition:1s; 
+                        position: absolute;
+                        top: 55px; right:29%;
+                    }
+                }
+                .ceo_icon{
+                    display: none;
+                    width: 50%;
+                    margin-bottom:35px;
+                    margin: 0 auto;
+                    
+                    &::after{
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+
+                    >i{
+                        transform: translateX(0px);
+                        float: left;
+                        display: block;
+                        text-align: center;
+                        border: 0.5px solid #777;
+                        border-radius: 50%;
+                        width: 28px; height: 28px;
+                        line-height: 27px;
+                        font-size: 16px;
+                        color: #777;
+                        margin: 20px 10px;
+                        cursor: pointer;
+                        transition: 0.5s;
+
+                        &:hover{
+                            background-color: #777;
+                            color: #eee;
+                            border: none;
+                        }
+                    }
+                }
+
+                p{
+                    word-break: break-all;
+                    font: normal 18px/1.3 'EB Garamond'; 
+                    color:#777; 
+                    letter-spacing: 0.6px;
+                    text-align: left;
+                    margin-bottom: 50px;
+                }
+                a{
+
+                    display: block;
+                    width: 200px; height: 35px;
+                    border: 1px solid #555;
+                    font: normal 13px/35px "arial";
+                    color: #555;
+                    text-align: center;
+                    margin-left: 0;
+                    margin: 0 auto;
+                    letter-spacing: 1.2px;
+                    transition: 1s;
+                    >i{margin-left: 5px;}
+
+                    &:hover{
+                        background: #555;
+                        color: #eee;
+                    }
+                }
+
+            }
+            .ceopic{
+                width: 100%; height: 490px;
+                float: none;
+                border: 1px solid rgba(153, 153, 153, 0.527);
+                margin-bottom: 50px;
+
+                .ceoimg1{
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                    filter: saturate(120%);
                 }
             }
         }
     }
-    /* member --------------------------------*/
-    #member{
-        width:100%; 
-        padding-top: 150px;
-        background-color:  rgba(238, 238, 238, 0.555);
+}
+
+/* member --------------------------------*/
+#member{
+    width:100%; 
+    padding-top: 10%;
+    background-color:  rgba(238, 238, 238, 0.555);
+
+    .member_inner{
+        width: 100%;
+        padding: 0 40px;
+        margin: 0 auto;
+
+        >h1{
+            font:bold 30px/1 'EB Garamond'; 
+            color:#333; 
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+            text-align: right;
+            margin-bottom: 50px;
+            position: relative;
+
+            &::before{
+                content: "";
+                display:block; 
+                width:60%; 
+                height:1px; 
+                background:rgba(153, 153, 153, 0.527); 
+                transition:1s; 
+                position: absolute;
+                top: 20px; left:0%;
+                transform: translateY(-50%);
+            }
+        }
     
-        .member_inner{
-            width: 100%;
+        .wrap{
+            width:100%; 
+            height: 100%;
+            position:relative; 
+            z-index:1;   
             margin: 0 auto;
-            padding: 0 60px;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-content:space-between ;
+            flex-wrap: wrap;
     
-            >h1{
-                font:bold 30px/1 'EB Garamond'; 
-                color:#333; 
-                letter-spacing: 3px;
-                margin-bottom: 50px;
-                text-align: right;
-                margin-bottom: 50px;
-                position: relative;
+            article{
+                width: 40%; height: 320px;
+                margin-right: 0px;
+                cursor: pointer;
+                opacity:0.9; 
+                transition:1s; 
+                position:relative; 
+                z-index:1; 
+                margin-bottom: 100px;
+                &:nth-of-type(3), &:nth-of-type(6){margin-right: 0;}
+    
     
                 &::before{
                     content: "";
                     display:block; 
-                    width:78%; 
-                    height:1px; 
-                    background:rgba(153, 153, 153, 0.527); 
+                    width:100%; 
+                    height:100%; 
+                    background:#555; 
+                    position:absolute; 
+                    top:50px; 
+                    left:-150px; 
+                    opacity:0; 
                     transition:1s; 
-                    position: absolute;
-                    top: 20px; left:0%;
-                    transform: translateY(-50%);
                 }
-            }
-        
-            .wrap{
-                width:100%; 
-                height: 100%;
-                position:relative; 
-                z-index:1;   
-                margin: 0 auto;
-                padding: 50px 0px;
-        
-                article{
-                    margin: 0 auto;
-                    float: left;
-                    width: 40%; height: 320px;
-                    margin-right: 40px;
-                    cursor: pointer;
-                    opacity:0.9; 
-                    transition:1s; 
+    
+                .inner{
+                    width:100%; 
+                    height:100%; 
                     position:relative; 
-                    z-index:1; 
-                    margin-bottom: 100px;
-                    &:nth-of-type(2), &:nth-of-type(4),&:nth-of-type(6){margin-right: 0;}
-                    &:nth-of-type(3){ margin-right: 40px;}
-        
-        
-                    &::before{
-                        content: "";
+                    margin: 0 auto;
+    
+                    &::after{
+                        content:''; 
                         display:block; 
-                        width:100%; 
-                        height:100%; 
-                        background:#555; 
-                        position:absolute; 
-                        top:50px; 
-                        left:-150px; 
-                        opacity:0; 
-                        transition:1s; 
+                        clear:both; 
                     }
-        
-                    .inner{
+    
+                    .txt{
+                        z-index: 9;
+                        width: 100%; height: 100%;
+                        transform: rotate(-90deg);
+                        display: flex;
+                        transition: 0.5s;
+                        letter-spacing: 1.2px;
+                        position: absolute;
+                        bottom:10px; left: -40px;
+                        
+    
+                        h2{
+                            font:bold 18px/1 'EB Garamond';
+                            color:#333; 
+                            transition:1s; 
+                            margin-right: 10px;
+                        }
+    
+                        p{
+                            font:14px/18px 'EB Garamond'; 
+                            color:#999; 
+                        }
+                    }
+    
+                    figure{
+                        transform-origin: center;
                         width:100%; 
                         height:100%; 
+                        background:#777; 
+                        transition:1s; 
+                        box-shadow:5px 5px 30px rgba(0,0,0,0.3);
                         position:relative; 
-                        margin: 0 auto;
-        
-                        &::after{
-                            content:''; 
-                            display:block; 
-                            clear:both; 
-                        }
-        
-                        .txt{
-                            width: 100%; height: 100%;
-                            transform: rotate(-90deg);
-                            display: flex;
-                            transition: 0.5s;
-                            letter-spacing: 1.2px;
-                            position: absolute;
-                            bottom: 0%; left: -10%;
-                            
-        
-                            h2{
-                                font:bold 18px/1 'EB Garamond';
-                                color:#333; 
-                                transition:1s; 
-                                margin-right: 10px;
-                            }
-        
-                            p{
-                                font:14px/18px 'EB Garamond'; 
-                                color:#999; 
-                            }
-                        }
-        
-                        figure{
-                            transform-origin: center;
+                        overflow:hidden; 
+                        margin-bottom: 15px;
+                        filter: saturate(30%);
+                        
+    
+                        img{
                             width:100%; 
                             height:100%; 
-                            background:#777; 
-                            transition:1s; 
-                            box-shadow:5px 5px 30px rgba(0,0,0,0.3);
-                            position:relative; 
-                            overflow:hidden; 
-                            margin-bottom: 15px;
-                            filter: saturate(30%);
-                            
-        
-                            img{
-                                width:100%; 
-                                height:100%; 
-                                object-fit:cover; 
-                            }
-                        }
-        
-                        .icon{
-                            width: 100%;
-        
-                            a{  
-                                float: left;
-                                display: block;
-                                text-align: center;
-                                border: 0.5px solid #555;
-                                border-radius: 50%;
-                                width: 24px; height: 24px;
-                                margin-right: 5px;
-                                line-height: 24px;
-                                font-size: 14px;
-                                color: #555;
-                                margin-left: 5px;
-                            }
+                            object-fit:cover; 
                         }
                     }
-        
-                    &:hover{
-        
-                        &::before{
-                            left: -50px;
-                            opacity: 1;
-                        }
-        
-                        figure{
-                            transform: scale(1.03);
-                            filter: saturate(120%);
-                        }
-        
-                        .txt h2{
-                            color: #eee;
-                        }
-                        .txt p{
-                            color: #999;
-                        }
-        
-                        .icon a{
-                            background-color: #eee;
-                            border: none;
-                            line-height: 25px;
-                            transition: 0.5s;
-        
-                            &:hover{
-                                transform: scale(1.2);
-                                
-                            }
+    
+                    .icon{
+                        width: 100%;
+    
+                        a{  
+                            float: left;
+                            display: block;
+                            text-align: center;
+                            border: 0.5px solid #555;
+                            border-radius: 50%;
+                            width: 24px; height: 24px;
+                            margin-right: 5px;
+                            line-height: 24px;
+                            font-size: 14px;
+                            color: #555;
+                            margin-left: 5px;
                         }
                     }
-        
                 }
-            }
     
-        }
+                &:hover{
     
+                    &::before{
+                        left: -50px;
+                        opacity: 1;
+                    }
     
-    }
+                    figure{
+                        transform: scale(1.03);
+                        filter: saturate(120%);
+                    }
     
-    /*newsletter-----------------------------------------*/
-    #newsletter{
-        width: 100%;
-        padding: 100px 0;
-        background: rgba(207, 207, 207, 0.555);
-        .inner{
-            width: 90%;
-            margin: 0 auto;
+                    .txt h2{
+                        color: #eee;
+                    }
+                    .txt p{
+                        color: #999;
+                    }
     
-            h1{
-                font:bold 30px/1 'EB Garamond'; 
-                color:#333; 
-                letter-spacing: 3px;
-                margin-bottom: 50px;
-                text-align: center;
-                margin-bottom: 30px;
-                position: relative;
-            }
-            p{
-                font: normal 18px/1.3 'EB Garamond'; 
-                color:#555; 
-                letter-spacing: 0.6px;
-                text-align: center;
-            }
-    
-            .wrap{
-                width:100%; 
-                margin-top: 40px;
-                text-align: center;
-    
-                input{ 
-                    width: 18%; height: 30px;
-                    margin-right: 20px;
-                    border: none;
-                    border-bottom: 1px solid #555;
-                    background-color: unset;
-                    &:last-child{
-                        transition: 1s;
-                        border: 1px solid #555;
-                        width: 10%;
-                        cursor: pointer;
-                        font: normal 14px/1 "arial" ;
-                        color: #555;
+                    .icon a{
+                        background-color: #eee;
+                        border: none;
+                        line-height: 25px;
+                        transition: 0.5s;
     
                         &:hover{
-                            background-color: #555;
-                            color: #eee;
+                            transform: scale(1.2);
+                            
                         }
                     }
                 }
+    
             }
         }
+
     }
+
+
+}
+
+/*newsletter-----------------------------------------*/
+#newsletter{
+    width: 100%;
+    .inner{
+        width: 100%;
     }
+}
+}
 
 
 @media screen and (max-width:539px){
@@ -2373,13 +2915,13 @@
 #member{
     position: relative;
     width:100%; 
-    padding-top: 40%;
+    padding-top: 10%;
     background-color:  rgba(238, 238, 238, 0.555);
 
     .member_inner{
         width: 100%;
         margin: 0 auto;
-        padding: 450px 60px 0px;
+        padding: 0px 60px 0px;
 
         >h1{
             font:bold 30px/1 'EB Garamond'; 
