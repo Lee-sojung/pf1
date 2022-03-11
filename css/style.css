@@ -611,6 +611,7 @@ input, label {
 /* member --------------------------------*/
 #member {
   width: 100%;
+  overflow: hidden;
   padding-top: 150px;
   background-color: rgba(238, 238, 238, 0.555); }
   #member .member_inner {
@@ -1119,6 +1120,7 @@ input, label {
   /* member --------------------------------*/
   #member {
     width: 100%;
+    overflow: hidden;
     padding-top: 150px;
     background-color: rgba(238, 238, 238, 0.555); }
     #member .member_inner {
@@ -1590,6 +1592,7 @@ input, label {
   /* member --------------------------------*/
   #member {
     width: 100%;
+    overflow: hidden;
     padding-top: 10%;
     background-color: rgba(238, 238, 238, 0.555); }
     #member .member_inner {
@@ -1829,20 +1832,21 @@ input, label {
     width: 100%;
     background: rgba(238, 238, 238, 0.555);
     position: relative;
-    padding: 0 0 100px; }
+    padding: 10px 0 100px; }
     #ourstory .inner {
       width: 100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 0 40px; }
       #ourstory .inner > .wrap {
         margin: 0 auto;
-        width: 90%;
-        display: flex;
+        width: 100%;
+        display: block;
         position: relative; }
         #ourstory .inner > .wrap > .story_txt {
-          width: 40%;
+          width: 100%;
           position: relative;
           margin-right: 100px;
-          transform: translateY(30px); }
+          transform: translateY(0px); }
           #ourstory .inner > .wrap > .story_txt > .left {
             font-size: 30px;
             color: #bbb; }
@@ -1865,7 +1869,8 @@ input, label {
             margin-left: 45px;
             margin-top: 30px; }
         #ourstory .inner > .wrap > .pic {
-          width: 60%;
+          margin-top: 60px;
+          width: 100%;
           height: 300px; }
           #ourstory .inner > .wrap > .pic > img {
             width: 100%;
@@ -2063,6 +2068,7 @@ input, label {
   /* member --------------------------------*/
   #member {
     width: 100%;
+    overflow: hidden;
     padding-top: 10%;
     background-color: rgba(238, 238, 238, 0.555); }
     #member .member_inner {
@@ -2258,7 +2264,7 @@ input, label {
           text-align: center;
           float: right;
           width: 100%;
-          height: 490px;
+          height: auto;
           margin-right: 0;
           position: relative; }
           #about .inner .welcome .welcome_txt h1 {
@@ -2302,7 +2308,7 @@ input, label {
     width: 100%;
     background: rgba(238, 238, 238, 0.555);
     position: relative;
-    padding: 0 0 100px; }
+    padding: 10px 0 100px; }
     #ourstory .inner {
       width: 100%;
       margin: 0 auto;
@@ -2451,7 +2457,7 @@ input, label {
           right: 50%;
           transform: translateY(-50%); }
         #ceo .inner .wrap .ceo_txt {
-          padding: 0 40px 50px;
+          padding: 0 40px 80px;
           text-align: center;
           float: none;
           width: 100%;
@@ -2465,7 +2471,7 @@ input, label {
             margin-bottom: 25px; }
             #ceo .inner .wrap .ceo_txt h1::before {
               content: "";
-              display: block;
+              display: none;
               width: 200px;
               height: 1px;
               background: rgba(153, 153, 153, 0.527);
@@ -2515,7 +2521,8 @@ input, label {
             font: normal 13px/35px "arial";
             color: #555;
             text-align: center;
-            margin-left: 24%;
+            margin-left: 0%;
+            margin: 0 auto;
             letter-spacing: 1.2px;
             transition: 1s; }
             #ceo .inner .wrap .ceo_txt > a > i {
@@ -2538,6 +2545,7 @@ input, label {
   #member {
     position: relative;
     width: 100%;
+    overflow: hidden;
     padding-top: 10%;
     background-color: rgba(238, 238, 238, 0.555); }
     #member .member_inner {
