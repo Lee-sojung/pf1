@@ -6,6 +6,10 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
 ul, ol, li {
   list-style: none; }
 
@@ -517,6 +521,10 @@ input, label {
       background: #fff;
       padding: 60px 70px;
       position: relative; }
+      #ceo .inner .wrap::after {
+        content: '';
+        display: block;
+        clear: both; }
       #ceo .inner .wrap::before {
         content: "";
         display: block;
@@ -647,6 +655,12 @@ input, label {
       justify-content: space-between;
       align-content: space-between;
       flex-wrap: wrap; }
+      #member .member_inner .wrap::after {
+        content: '';
+        display: inline;
+        position: absolute;
+        top: -99999px;
+        left: -99999px; }
       #member .member_inner .wrap article {
         width: 310px;
         height: 320px;
@@ -677,15 +691,14 @@ input, label {
             display: block;
             clear: both; }
           #member .member_inner .wrap article .inner .txt {
-            width: 100%;
-            height: 100%;
-            transform: rotate(-90deg);
             display: flex;
             transition: 0.5s;
             letter-spacing: 1.2px;
             position: absolute;
-            bottom: 0%;
-            left: -10%; }
+            bottom: 0px;
+            left: 0px;
+            transform-origin: left bottom;
+            transform: rotate(-90deg) translateY(-20px); }
             #member .member_inner .wrap article .inner .txt h2 {
               font: bold 18px/1 'EB Garamond';
               color: #333;
@@ -1189,25 +1202,14 @@ input, label {
               content: '';
               display: block;
               clear: both; }
-            #member .member_inner .wrap article .inner .txt {
-              z-index: 9;
-              width: 100%;
-              height: 100%;
-              transform: rotate(-90deg);
-              display: flex;
-              transition: 0.5s;
-              letter-spacing: 1.2px;
-              position: absolute;
-              bottom: 10px;
-              left: -40px; }
-              #member .member_inner .wrap article .inner .txt h2 {
-                font: bold 18px/1 'EB Garamond';
-                color: #333;
-                transition: 1s;
-                margin-right: 10px; }
-              #member .member_inner .wrap article .inner .txt p {
-                font: 14px/18px 'EB Garamond';
-                color: #999; }
+            #member .member_inner .wrap article .inner .txt h2 {
+              font: bold 18px/1 'EB Garamond';
+              color: #333;
+              transition: 1s;
+              margin-right: 10px; }
+            #member .member_inner .wrap article .inner .txt p {
+              font: 14px/18px 'EB Garamond';
+              color: #999; }
             #member .member_inner .wrap article .inner figure {
               transform-origin: center;
               width: 100%;
@@ -1661,25 +1663,14 @@ input, label {
               content: '';
               display: block;
               clear: both; }
-            #member .member_inner .wrap article .inner .txt {
-              z-index: 9;
-              width: 100%;
-              height: 100%;
-              transform: rotate(-90deg);
-              display: flex;
-              transition: 0.5s;
-              letter-spacing: 1.2px;
-              position: absolute;
-              bottom: 10px;
-              left: -40px; }
-              #member .member_inner .wrap article .inner .txt h2 {
-                font: bold 18px/1 'EB Garamond';
-                color: #333;
-                transition: 1s;
-                margin-right: 10px; }
-              #member .member_inner .wrap article .inner .txt p {
-                font: 14px/18px 'EB Garamond';
-                color: #999; }
+            #member .member_inner .wrap article .inner .txt h2 {
+              font: bold 18px/1 'EB Garamond';
+              color: #333;
+              transition: 1s;
+              margin-right: 10px; }
+            #member .member_inner .wrap article .inner .txt p {
+              font: 14px/18px 'EB Garamond';
+              color: #999; }
             #member .member_inner .wrap article .inner figure {
               transform-origin: center;
               width: 100%;
@@ -2137,25 +2128,14 @@ input, label {
               content: '';
               display: block;
               clear: both; }
-            #member .member_inner .wrap article .inner .txt {
-              z-index: 9;
-              width: 100%;
-              height: 100%;
-              transform: rotate(-90deg);
-              display: flex;
-              transition: 0.5s;
-              letter-spacing: 1.2px;
-              position: absolute;
-              bottom: 10px;
-              left: -40px; }
-              #member .member_inner .wrap article .inner .txt h2 {
-                font: bold 18px/1 'EB Garamond';
-                color: #333;
-                transition: 1s;
-                margin-right: 10px; }
-              #member .member_inner .wrap article .inner .txt p {
-                font: 14px/18px 'EB Garamond';
-                color: #999; }
+            #member .member_inner .wrap article .inner .txt h2 {
+              font: bold 18px/1 'EB Garamond';
+              color: #333;
+              transition: 1s;
+              margin-right: 10px; }
+            #member .member_inner .wrap article .inner .txt p {
+              font: 14px/18px 'EB Garamond';
+              color: #999; }
             #member .member_inner .wrap article .inner figure {
               transform-origin: center;
               width: 100%;
@@ -2615,24 +2595,6 @@ input, label {
               content: '';
               display: block;
               clear: both; }
-            #member .member_inner .wrap article .inner .txt {
-              width: 100%;
-              height: 100%;
-              transform: rotate(-90deg);
-              display: flex;
-              transition: 0.5s;
-              letter-spacing: 1.2px;
-              position: absolute;
-              bottom: 20%;
-              left: -20%; }
-              #member .member_inner .wrap article .inner .txt h2 {
-                font: bold 18px/1 'EB Garamond';
-                color: #333;
-                transition: 1s;
-                margin-right: 10px; }
-              #member .member_inner .wrap article .inner .txt p {
-                font: 14px/18px 'EB Garamond';
-                color: #999; }
             #member .member_inner .wrap article .inner figure {
               transform-origin: center;
               width: 100%;
@@ -2797,266 +2759,261 @@ input, label {
               transition: 0.5s;
               color: #d3a69ae0;
               transform: scale(1.2); }
+          #community .inner .tabbox #tabbtns li.on > a {
+            color: #ca988bf6; }
     #community .inner .container {
       width: 80%;
       float: right;
       position: relative; }
-      #community .inner .container #tab1 {
-        display: block; }
-        #community .inner .container #tab1 h2 {
-          text-align: right;
-          font: bold 38px/1 "arial";
-          color: #555;
-          margin-bottom: 40px; }
-          #community .inner .container #tab1 h2::before {
-            content: "";
-            display: block;
-            width: 85%;
-            height: 1px;
-            background: rgba(153, 153, 153, 0.527);
-            transition: 1s;
-            position: absolute;
-            top: 20px;
-            left: 0%;
-            transform: translateY(-50%); }
-        #community .inner .container #tab1 .faq {
-          width: 100%;
-          margin-bottom: 100px; }
-          #community .inner .container #tab1 .faq .panel-question {
-            margin-bottom: 20px;
-            position: relative; }
-            #community .inner .container #tab1 .faq .panel-question.on .panel-body {
-              display: block; }
-            #community .inner .container #tab1 .faq .panel-question.on i.on {
-              display: block;
-              color: #d3a69ad0; }
-            #community .inner .container #tab1 .faq .panel-question.on i {
-              display: none; }
-            #community .inner .container #tab1 .faq .panel-question .panel-heading {
-              font: bold 18px/1 "arial";
-              padding: 15px;
-              background: #ded6d4d0;
-              color: #555;
-              cursor: pointer; }
-            #community .inner .container #tab1 .faq .panel-question i {
-              position: absolute;
-              right: 10px;
-              top: 10px;
-              width: 30px;
-              height: 30px;
-              font-size: 22px;
-              text-align: center;
-              line-height: 30px;
-              border-radius: 50%;
-              background-color: #fff;
-              color: #777; }
-              #community .inner .container #tab1 .faq .panel-question i.on {
-                display: none; }
-            #community .inner .container #tab1 .faq .panel-question .panel-body {
-              padding: 15px;
-              background: rgba(238, 238, 238, 0.555);
-              display: none; }
-              #community .inner .container #tab1 .faq .panel-question .panel-body p {
-                font: normal 15px/1.2 "arial";
-                letter-spacing: 1px;
-                color: #777; }
-        #community .inner .container #tab1 .faq_banner {
-          width: 100%;
-          position: relative; }
-          #community .inner .container #tab1 .faq_banner h2 {
-            text-align: right;
-            font: bold 25px/1 "arial";
-            color: #999;
-            margin-bottom: 40px; }
-            #community .inner .container #tab1 .faq_banner h2::before {
-              content: "";
-              display: block;
-              width: 60%;
-              height: 1px;
-              background: rgba(153, 153, 153, 0.527);
-              transition: 1s;
-              position: absolute;
-              top: 15px;
-              left: 0%; }
-          #community .inner .container #tab1 .faq_banner .help {
-            position: relative;
-            width: 100%;
-            background: rgba(63, 26, 11, 0.705); }
-            #community .inner .container #tab1 .faq_banner .help .faq_help {
-              width: 100%;
-              height: 350px;
-              padding: 100px 0;
-              background: url(/img/Random-Inspiration-397.jpg) no-repeat center/cover;
-              opacity: 0.7; }
-            #community .inner .container #tab1 .faq_banner .help .inner {
-              position: absolute;
-              top: 48%;
-              transform: translateY(-70%);
-              width: 100%;
-              margin: 0 auto;
-              margin-left: 100px; }
-              #community .inner .container #tab1 .faq_banner .help .inner > h1 {
-                font: bold 28px/1 "arial";
-                color: #eee;
-                text-align: left;
-                transform: translateY(-20px); }
-              #community .inner .container #tab1 .faq_banner .help .inner > p {
-                font: normal 17px/1.5 'arial';
-                letter-spacing: 1px;
-                color: #eee;
-                text-align: left;
-                transform: translateY(10px); }
-                #community .inner .container #tab1 .faq_banner .help .inner > p > a {
-                  text-decoration: underline;
-                  color: #fff;
-                  transition: 0.5s; }
-              #community .inner .container #tab1 .faq_banner .help .inner .faq_icon {
-                position: absolute;
-                bottom: -70px; }
-                #community .inner .container #tab1 .faq_banner .help .inner .faq_icon > a {
-                  margin-right: 20px;
-                  color: #eee;
-                  font-size: 18px; }
-      #community .inner .container #tab2 {
+      #community .inner .container > div {
         display: none; }
-        #community .inner .container #tab2 h2 {
-          text-align: right;
-          font: bold 38px/1 "arial";
-          color: #555;
-          margin-bottom: 40px; }
-          #community .inner .container #tab2 h2::before {
-            content: "";
+        #community .inner .container > div.on {
+          display: block; }
+      #community .inner .container #tab1 > h2 {
+        text-align: right;
+        font: bold 38px/1 "arial";
+        color: #555;
+        margin-bottom: 40px; }
+        #community .inner .container #tab1 > h2::before {
+          content: "";
+          display: block;
+          width: 85%;
+          height: 1px;
+          background: rgba(153, 153, 153, 0.527);
+          transition: 1s;
+          position: absolute;
+          top: 20px;
+          left: 0%;
+          transform: translateY(-50%); }
+      #community .inner .container #tab1 .faq {
+        width: 100%;
+        margin-bottom: 100px; }
+        #community .inner .container #tab1 .faq .panel-question {
+          margin-bottom: 20px;
+          position: relative; }
+          #community .inner .container #tab1 .faq .panel-question.on .panel-body {
+            display: block; }
+          #community .inner .container #tab1 .faq .panel-question.on i.on {
             display: block;
-            width: 77%;
-            height: 1px;
-            background: rgba(153, 153, 153, 0.527);
-            transition: 1s;
-            position: absolute;
-            top: 20px;
-            left: 0%;
-            transform: translateY(-50%); }
-        #community .inner .container #tab2 table {
-          width: 100%;
-          border-bottom: 2px solid #bbb;
-          margin-bottom: 40px;
-          border-collapse: collapse; }
-          #community .inner .container #tab2 table tr:nth-of-type(even) {
-            background: rgba(238, 238, 238, 0.555); }
-          #community .inner .container #tab2 table tr th {
+            color: #ca988bf6; }
+          #community .inner .container #tab1 .faq .panel-question.on i {
+            display: none; }
+          #community .inner .container #tab1 .faq .panel-question.on .panel-heading {
+            background: #c3b1ad; }
+          #community .inner .container #tab1 .faq .panel-question .panel-heading {
+            font: bold 18px/1 "arial";
             padding: 15px;
             background: #ded6d4d0;
-            color: #fff; }
-            #community .inner .container #tab2 table tr th:nth-of-type(1) {
-              width: 10%; }
-            #community .inner .container #tab2 table tr th:nth-of-type(3) {
-              width: 15%; }
-            #community .inner .container #tab2 table tr th:nth-of-type(4) {
-              width: 15%; }
-          #community .inner .container #tab2 table tr td {
-            padding: 13px;
-            border-bottom: 1px solid #ddd;
-            text-align: center;
-            color: #555; }
-            #community .inner .container #tab2 table tr td:nth-of-type(2) {
-              text-align: left; }
-              #community .inner .container #tab2 table tr td:nth-of-type(2) a {
-                float: left;
-                color: #555;
-                font-family: "arial";
-                line-height: 1.4; }
-          #community .inner .container #tab2 table tr:hover td {
-            background: rgba(195, 211, 231, 0.274); }
-        #community .inner .container #tab2 .pagination {
-          width: 100%;
-          text-align: center; }
-          #community .inner .container #tab2 .pagination::after {
-            content: '';
-            display: block;
-            clear: both; }
-          #community .inner .container #tab2 .pagination .prev {
-            float: left;
-            display: block;
-            width: 30px;
-            height: 30px;
-            font-size: 20px;
-            color: #999;
-            text-align: center;
-            line-height: 30px; }
-          #community .inner .container #tab2 .pagination .next {
-            float: right;
-            display: block;
-            width: 30px;
-            height: 30px;
-            font-size: 20px;
-            color: #999;
-            text-align: center;
-            line-height: 30px; }
-          #community .inner .container #tab2 .pagination .numbers {
-            display: inline-block;
-            text-align: center;
-            font-size: 0; }
-            #community .inner .container #tab2 .pagination .numbers a {
-              display: inline-block;
-              width: 30px;
-              height: 30px;
-              font: 13px/30px 'arial';
-              color: #666;
-              text-align: center;
-              margin: 0 5px;
-              transition: 0.5s; }
-              #community .inner .container #tab2 .pagination .numbers a.on {
-                background-color: #ded6d4d0;
-                color: #555; }
-              #community .inner .container #tab2 .pagination .numbers a:hover {
-                background: #ded6d4d0;
-                color: #555; }
-      #community .inner .container #tab3 {
-        display: none; }
-        #community .inner .container #tab3 h2 {
-          text-align: right;
-          font: bold 38px/1 "arial";
-          color: #555;
-          margin-bottom: 40px; }
-          #community .inner .container #tab3 h2::before {
-            content: "";
-            display: block;
-            width: 79%;
-            height: 1px;
-            background: rgba(153, 153, 153, 0.527);
-            transition: 1s;
+            color: #555;
+            cursor: pointer; }
+          #community .inner .container #tab1 .faq .panel-question i {
             position: absolute;
-            top: 20px;
-            left: 0%;
-            transform: translateY(-50%); }
-        #community .inner .container #tab3 .eventswiper {
-          margin-bottom: 100px;
-          border: 3px solid #ded6d4d0;
-          background: rgba(238, 238, 238, 0.555);
-          width: 100%;
-          height: 440px;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            font-size: 22px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #777; }
+            #community .inner .container #tab1 .faq .panel-question i.on {
+              display: none; }
+          #community .inner .container #tab1 .faq .panel-question .panel-body {
+            padding: 15px;
+            background: rgba(238, 238, 238, 0.555);
+            display: none; }
+            #community .inner .container #tab1 .faq .panel-question .panel-body p {
+              font: normal 15px/1.2 "arial";
+              letter-spacing: 1px;
+              color: #777; }
+      #community .inner .container #tab1 .faq_banner {
+        width: 100%;
+        position: relative; }
+        #community .inner .container #tab1 .faq_banner h2 {
+          text-align: right;
+          font: bold 25px/1 "arial";
+          color: #999;
+          margin-bottom: 40px; }
+        #community .inner .container #tab1 .faq_banner .help {
           position: relative;
-          padding: 40px 60px; }
-          #community .inner .container #tab3 .eventswiper .main_swiper {
+          width: 100%;
+          background: rgba(63, 26, 11, 0.705); }
+          #community .inner .container #tab1 .faq_banner .help .faq_help {
+            width: 100%;
+            height: 350px;
+            padding: 100px 0;
+            background: url(/img/Random-Inspiration-397.jpg) no-repeat center/cover;
+            opacity: 0.7; }
+          #community .inner .container #tab1 .faq_banner .help .inner {
+            position: absolute;
+            top: 48%;
+            transform: translateY(-70%);
+            width: 100%;
+            margin: 0 auto;
+            margin-left: 100px; }
+            #community .inner .container #tab1 .faq_banner .help .inner > h1 {
+              font: bold 28px/1 "arial";
+              color: #eee;
+              text-align: left;
+              transform: translateY(-20px); }
+            #community .inner .container #tab1 .faq_banner .help .inner > p {
+              font: normal 17px/1.5 'arial';
+              letter-spacing: 1px;
+              color: #eee;
+              text-align: left;
+              transform: translateY(10px); }
+              #community .inner .container #tab1 .faq_banner .help .inner > p > a {
+                text-decoration: underline;
+                color: #fff;
+                transition: 0.5s; }
+            #community .inner .container #tab1 .faq_banner .help .inner .faq_icon {
+              position: absolute;
+              bottom: -70px; }
+              #community .inner .container #tab1 .faq_banner .help .inner .faq_icon > a {
+                margin-right: 20px;
+                color: #eee;
+                font-size: 18px; }
+      #community .inner .container #tab2 > h2 {
+        text-align: right;
+        font: bold 38px/1 "arial";
+        color: #555;
+        margin-bottom: 40px; }
+        #community .inner .container #tab2 > h2::before {
+          content: "";
+          display: block;
+          width: 77%;
+          height: 1px;
+          background: rgba(153, 153, 153, 0.527);
+          transition: 1s;
+          position: absolute;
+          top: 20px;
+          left: 0%;
+          transform: translateY(-50%); }
+      #community .inner .container #tab2 table {
+        width: 100%;
+        border-bottom: 2px solid #bbb;
+        margin-bottom: 40px;
+        border-collapse: collapse; }
+        #community .inner .container #tab2 table tr:nth-of-type(even) {
+          background: rgba(238, 238, 238, 0.555); }
+        #community .inner .container #tab2 table tr th {
+          padding: 15px;
+          background: #ded6d4d0;
+          color: #fff; }
+          #community .inner .container #tab2 table tr th:nth-of-type(1) {
+            width: 10%; }
+          #community .inner .container #tab2 table tr th:nth-of-type(3) {
+            width: 15%; }
+          #community .inner .container #tab2 table tr th:nth-of-type(4) {
+            width: 15%; }
+        #community .inner .container #tab2 table tr td {
+          padding: 13px;
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+          color: #555; }
+          #community .inner .container #tab2 table tr td:nth-of-type(2) {
+            text-align: left; }
+            #community .inner .container #tab2 table tr td:nth-of-type(2) a {
+              float: left;
+              color: #555;
+              font-family: "arial";
+              line-height: 1.4; }
+        #community .inner .container #tab2 table tr:hover td {
+          background: rgba(195, 211, 231, 0.274); }
+      #community .inner .container #tab2 .pagination {
+        width: 100%;
+        text-align: center; }
+        #community .inner .container #tab2 .pagination::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #community .inner .container #tab2 .pagination .prev {
+          float: left;
+          display: block;
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+          color: #999;
+          text-align: center;
+          line-height: 30px; }
+        #community .inner .container #tab2 .pagination .next {
+          float: right;
+          display: block;
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+          color: #999;
+          text-align: center;
+          line-height: 30px; }
+        #community .inner .container #tab2 .pagination .numbers {
+          display: inline-block;
+          text-align: center;
+          font-size: 0; }
+          #community .inner .container #tab2 .pagination .numbers a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            font: 13px/30px 'arial';
+            color: #666;
+            text-align: center;
+            margin: 0 5px;
+            transition: 0.5s; }
+            #community .inner .container #tab2 .pagination .numbers a.on {
+              background-color: #ded6d4d0;
+              color: #555; }
+            #community .inner .container #tab2 .pagination .numbers a:hover {
+              background: #ded6d4d0;
+              color: #555; }
+      #community .inner .container #tab3 > h2 {
+        text-align: right;
+        font: bold 38px/1 "arial";
+        color: #555;
+        margin-bottom: 40px; }
+        #community .inner .container #tab3 > h2::before {
+          content: "";
+          display: block;
+          width: 79%;
+          height: 1px;
+          background: rgba(153, 153, 153, 0.527);
+          transition: 1s;
+          position: absolute;
+          top: 20px;
+          left: 0%;
+          transform: translateY(-50%); }
+      #community .inner .container #tab3 .eventswiper {
+        margin-bottom: 100px;
+        border: 3px solid #ded6d4d0;
+        background: rgba(238, 238, 238, 0.555);
+        width: 100%;
+        height: 440px;
+        position: relative;
+        padding: 40px 60px; }
+        #community .inner .container #tab3 .eventswiper .main_swiper {
+          width: 100%;
+          height: 100%;
+          overflow: hidden; }
+          #community .inner .container #tab3 .eventswiper .main_swiper .main1 {
             width: 100%;
             height: 100%;
-            overflow: hidden; }
-            #community .inner .container #tab3 .eventswiper .main_swiper .main1 {
-              width: 100%;
-              height: 100%;
-              position: relative;
-              background: #fff;
-              padding: 30px; }
-              #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .mainpic {
-                float: left;
-                width: 35%;
-                height: 300px;
-                margin-right: 50px;
-                margin-left: 10px;
-                box-shadow: 5px 5px 5px #ded6d4d0; }
-                #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .mainpic img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover; }
+            position: relative;
+            background: #fff;
+            padding: 30px; }
+            #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .mainpic {
+              float: left;
+              width: 35%;
+              height: 300px;
+              margin-right: 30px;
+              margin-left: 10px;
+              box-shadow: 5px 5px 5px #ded6d4d0; }
+              #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .mainpic img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
+            #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt {
+              float: right;
+              width: 55%; }
               #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt h1 {
                 font: bold 27px/1 "arial";
                 color: #333;
@@ -3070,250 +3027,490 @@ input, label {
                 color: #555;
                 margin-top: 20px;
                 word-break: break-all; }
-              #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt a {
-                transform: translateX(30%);
-                margin-right: 15px;
-                float: left;
-                text-align: center;
-                display: block;
-                width: 150px;
-                height: 30px;
-                background: #ffac7563;
-                font: bold 14px/30px "arial";
-                margin-top: 25px;
-                color: #555;
-                transition: 0.5s; }
-                #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt a:hover {
-                  background-color: #555;
-                  color: #eee; }
-              #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown {
-                display: flex;
-                transform: scale(1.5);
-                position: absolute;
-                bottom: 30px;
-                right: 150px; }
-                #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown .time {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 10px; }
-                  #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown .time > h1 {
-                    font: bold 22px/1 "Poppins";
-                    margin: 0 0 5px; }
-                  #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown .time > span {
-                    font: bold 11px/1 "Poppins"; }
-            #community .inner .container #tab3 .eventswiper .main_swiper .main2 {
-              width: 100%;
-              height: 100%;
-              position: relative;
-              background: #fff;
-              padding: 30px; }
-              #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .mainpic {
-                float: left;
-                width: 35%;
-                height: 300px;
-                margin-right: 50px;
-                margin-left: 10px;
-                box-shadow: 5px 5px 5px #ded6d4d0; }
-                #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .mainpic img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover; }
-              #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .eventtxt h1 {
-                font: bold 27px/1 "arial";
-                color: #333;
-                margin-bottom: 20px; }
-              #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .eventtxt > span {
-                background: rgba(195, 214, 235, 0.384);
-                font: normal 14px/1 "arial";
-                color: #777; }
-              #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .eventtxt p {
-                font: normal 18px/1.2 "arial";
-                color: #555;
-                margin-top: 20px;
-                word-break: break-all; }
-              #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .eventtxt a {
-                transform: translateX(30%);
-                margin-right: 15px;
-                float: left;
-                text-align: center;
-                display: block;
-                width: 150px;
-                height: 30px;
-                background: #ffac7563;
-                font: bold 14px/30px "arial";
-                margin-top: 25px;
-                color: #555;
-                transition: 0.5s; }
-                #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .eventtxt a:hover {
-                  background-color: #555;
-                  color: #eee; }
-              #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .eventtxt .countdown {
-                display: flex;
-                transform: scale(1.5);
-                position: absolute;
-                bottom: 30px;
-                right: 150px; }
-                #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .eventtxt .countdown .time {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  margin: 10px; }
-                  #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .eventtxt .countdown .time > h1 {
-                    font: bold 22px/1 "Poppins";
-                    margin: 0 0 5px; }
-                  #community .inner .container #tab3 .eventswiper .main_swiper .main2 .wrap .eventtxt .countdown .time > span {
-                    font: bold 11px/1 "Poppins"; }
-          #community .inner .container #tab3 .eventswiper .swiper-button-prev {
-            filter: grayscale(100%) brightness(1.4);
-            transform: scale(0.5); }
-          #community .inner .container #tab3 .eventswiper .swiper-button-next {
-            filter: grayscale(100%) brightness(1.4);
-            transform: scale(0.5); }
-        #community .inner .container #tab3 .upcoming {
-          position: relative; }
-          #community .inner .container #tab3 .upcoming h2 {
-            text-align: right;
-            font: bold 25px/1 "arial";
-            color: #999;
-            margin-bottom: 40px; }
-            #community .inner .container #tab3 .upcoming h2::before {
-              content: "";
-              display: block;
-              width: 66%;
-              height: 1px;
-              background: rgba(153, 153, 153, 0.527);
-              transition: 1s;
-              position: absolute;
-              top: 15px;
-              left: 0%; }
-          #community .inner .container #tab3 .upcoming .update-event {
-            margin-bottom: 100px;
-            border: 3px solid #ded6d4d0;
-            background: rgba(238, 238, 238, 0.555);
-            width: 100%;
-            position: relative;
-            padding: 40px; }
-            #community .inner .container #tab3 .upcoming .update-event .eventhead {
-              width: 100%; }
-              #community .inner .container #tab3 .upcoming .update-event .eventhead select {
-                width: 140px;
-                height: 25px;
-                margin-right: 30px;
-                margin-bottom: 30px;
-                font: normal 15px/1 "arial";
-                color: #555;
-                border: none; }
-              #community .inner .container #tab3 .upcoming .update-event .eventhead span {
-                margin-right: 6px;
-                font: normal 12px/1 "arial";
-                color: #999; }
-              #community .inner .container #tab3 .upcoming .update-event .eventhead > a {
-                display: block;
-                float: right;
-                width: 100px;
-                height: 27px;
-                background: #ffac7563;
-                text-align: center;
-                font: normal 14px/28px "arial";
-                color: #555;
-                transition: 0.5s; }
-                #community .inner .container #tab3 .upcoming .update-event .eventhead > a:hover {
-                  background-color: #555;
-                  color: #eee; }
-            #community .inner .container #tab3 .upcoming .update-event .scrollbar {
-              height: 700px;
-              overflow-y: scroll; }
-              #community .inner .container #tab3 .upcoming .update-event .scrollbar table {
-                width: 100%;
-                margin-bottom: 50px;
-                border-collapse: collapse; }
-                #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr:nth-of-type(even) {
-                  background: rgba(238, 238, 238, 0.555); }
-                #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th {
-                  padding: 15px;
-                  background: #ded6d4d0;
-                  color: #fff; }
-                  #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(1) {
-                    width: 12%; }
-                  #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(2) {
-                    width: 15%; }
-                  #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(4) {
-                    width: 18%; }
-                #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td {
-                  padding: 13px;
-                  border-bottom: 1px solid #ddd;
+              #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns {
+                width: 100%; }
+                #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns a {
+                  margin-right: 15px;
+                  margin-bottom: 20px;
+                  float: left;
                   text-align: center;
-                  color: #555; }
-                  #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td img {
-                    width: 180px;
-                    height: 100px;
-                    object-fit: cover; }
-                  #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td a {
-                    display: block;
-                    width: 110px;
-                    height: 30px;
-                    background: rgba(195, 214, 235, 0.384);
-                    margin-bottom: 10px;
-                    text-align: center;
-                    font: normal 13px/30px "arial";
-                    color: #555;
-                    transition: 0.5s; }
-                    #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td a:hover {
-                      color: #eee;
-                      background: #555; }
-                #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr:hover td {
-                  background: rgba(195, 211, 231, 0.164); }
-              #community .inner .container #tab3 .upcoming .update-event .scrollbar .eventmore {
-                display: block;
-                width: 150px;
-                height: 35px;
-                background: #ffac7563;
+                  display: block;
+                  width: 150px;
+                  height: 30px;
+                  background: #ffac7563;
+                  font: bold 14px/30px "arial";
+                  margin-top: 25px;
+                  color: #555;
+                  transition: 0.5s; }
+                  #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns a:hover {
+                    background-color: #555;
+                    color: #eee; }
+              #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown {
+                width: 100%;
+                margin-left: 30px;
+                display: flex;
+                transform: scale(1.2); }
+                #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown .dayTime {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 10px; }
+                  #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown .dayTime .time {
+                    font: bold 22px/1 "Poppins";
+                    margin: 0 0 5px; }
+                  #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown .dayTime > span {
+                    font: bold 11px/1 "Poppins"; }
+      #community .inner .container #tab3 .upcoming {
+        position: relative; }
+        #community .inner .container #tab3 .upcoming > h2 {
+          text-align: right;
+          font: bold 25px/1 "arial";
+          color: #999;
+          margin-bottom: 40px; }
+        #community .inner .container #tab3 .upcoming .update-event {
+          border: 3px solid #ded6d4d0;
+          background: rgba(238, 238, 238, 0.555);
+          width: 100%;
+          position: relative;
+          padding: 40px; }
+          #community .inner .container #tab3 .upcoming .update-event .eventhead {
+            width: 100%; }
+            #community .inner .container #tab3 .upcoming .update-event .eventhead select {
+              width: 140px;
+              height: 25px;
+              margin-right: 30px;
+              margin-bottom: 30px;
+              font: normal 15px/1 "arial";
+              color: #555;
+              border: none; }
+            #community .inner .container #tab3 .upcoming .update-event .eventhead span {
+              margin-right: 6px;
+              font: normal 12px/1 "arial";
+              color: #999; }
+            #community .inner .container #tab3 .upcoming .update-event .eventhead > a {
+              display: block;
+              float: right;
+              width: 100px;
+              height: 27px;
+              background: #ffac7563;
+              text-align: center;
+              font: normal 14px/28px "arial";
+              color: #555;
+              transition: 0.5s; }
+              #community .inner .container #tab3 .upcoming .update-event .eventhead > a:hover {
+                background-color: #555;
+                color: #eee; }
+          #community .inner .container #tab3 .upcoming .update-event .scrollbar {
+            height: 700px;
+            overflow-y: scroll; }
+            #community .inner .container #tab3 .upcoming .update-event .scrollbar table {
+              width: 100%;
+              margin-bottom: 50px;
+              border-collapse: collapse; }
+              #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr:nth-of-type(even) {
+                background: rgba(238, 238, 238, 0.555); }
+              #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th {
+                padding: 15px;
+                background: #ded6d4d0;
+                color: #fff; }
+                #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(1) {
+                  width: 12%; }
+                #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(2) {
+                  width: 15%; }
+                #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(4) {
+                  width: 18%; }
+              #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td {
+                padding: 13px;
+                border-bottom: 1px solid #ddd;
                 text-align: center;
-                font: normal 15px/35px "arial";
-                margin: 0 auto;
-                color: #555;
-                transition: 0.5s; }
-                #community .inner .container #tab3 .upcoming .update-event .scrollbar .eventmore:hover {
-                  color: #eee;
-                  background: #555; }
+                color: #555; }
+                #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td img {
+                  width: 180px;
+                  height: 100px;
+                  object-fit: cover; }
+                #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td a {
+                  display: block;
+                  width: 110px;
+                  height: 30px;
+                  background: rgba(195, 214, 235, 0.384);
+                  margin-bottom: 10px;
+                  text-align: center;
+                  font: normal 13px/30px "arial";
+                  color: #555;
+                  transition: 0.5s; }
+                  #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td a:hover {
+                    color: #eee;
+                    background: #555; }
+              #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr:hover td {
+                background: rgba(195, 211, 231, 0.164); }
+            #community .inner .container #tab3 .upcoming .update-event .scrollbar .eventmore {
+              display: block;
+              width: 150px;
+              height: 35px;
+              background: #ffac7563;
+              text-align: center;
+              font: normal 15px/35px "arial";
+              margin: 0 auto;
+              color: #555;
+              transition: 0.5s; }
+              #community .inner .container #tab3 .upcoming .update-event .scrollbar .eventmore:hover {
+                color: #eee;
+                background: #555; }
 
 /* tablet -------------------------------------------*/
-@media screen and (max-width: 1179px) {
-  .community .inner table tr th:nth-of-type(1) {
-    width: 15%; }
-  .community .inner table tr th:nth-of-type(3) {
-    width: 17%; }
-  .community .inner table tr th:nth-of-type(4) {
-    width: 0%;
-    display: none; }
-  .community .inner table tr td:nth-of-type(4) {
-    width: 0%;
-    display: none; }
-  .community .inner .pagination .numbers a:nth-of-type(6) {
-    display: none; }
-  .community .inner .pagination .numbers a:nth-of-type(7) {
-    display: none; }
-  .community .inner .pagination .numbers a:nth-of-type(8) {
-    display: none; }
-  .community .inner .pagination .numbers a:nth-of-type(9) {
-    display: none; }
-  .community .inner .pagination .numbers a:nth-of-type(10) {
-    display: none; } }
-/* mobile -------------------------------------------*/
-@media screen and (max-width: 539px) {
-  .community .inner table tr th:nth-of-type(1) {
-    width: 0%;
-    display: none; }
-  .community .inner table tr th:nth-of-type(3) {
-    width: 27%; }
-  .community .inner table tr td:nth-of-type(1) {
-    width: 0%;
-    display: none; }
-  .community .inner .pagination .numbers {
-    display: none; } }
+@media screen and (max-width: 1208px) {
+  #community .inner {
+    width: 100%;
+    padding: 0 40px; }
+    #community .inner .tabbox {
+      width: 100%;
+      float: none;
+      position: relative;
+      top: 0px; }
+      #community .inner .tabbox #tabbtns {
+        width: 100%;
+        display: flex; }
+        #community .inner .tabbox #tabbtns li {
+          width: auto;
+          margin-right: 20px;
+          border-bottom: none; }
+    #community .inner .container {
+      width: 100%;
+      float: none; }
+      #community .inner .container #tab1 .faq_banner .help .inner {
+        margin-left: 0px; }
+        #community .inner .container #tab1 .faq_banner .help .inner > h1 {
+          text-align: center; }
+        #community .inner .container #tab1 .faq_banner .help .inner > p {
+          text-align: center; }
+        #community .inner .container #tab1 .faq_banner .help .inner .faq_icon {
+          text-align: center;
+          position: relative; }
+      #community .inner .container #tab3 .eventswiper {
+        width: 100%;
+        height: auto; }
+        #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown {
+          margin-left: 35px; } }
+@media screen and (max-width: 912px) {
+  #community .inner .container #tab3 .eventswiper {
+    width: 100%;
+    height: auto; }
+    #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown {
+      margin-left: 35px; }
+  #community .inner .container #tab3 .upcoming {
+    position: relative; }
+    #community .inner .container #tab3 .upcoming .update-event .eventhead {
+      width: 100%; }
+      #community .inner .container #tab3 .upcoming .update-event .eventhead select {
+        width: 100px; } }
+@media screen and (max-width: 880px) {
+  #community .inner .container #tab1 > h2::before {
+    width: 70%; }
+  #community .inner .container #tab2 > h2::before {
+    width: 70%; }
+  #community .inner .container #tab3 > h2::before {
+    width: 70%; }
+  #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .mainpic {
+    float: none;
+    width: 100%;
+    height: 250px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 30px; }
+  #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt {
+    float: none;
+    width: 100%;
+    text-align: center; }
+    #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns {
+      width: 315px;
+      height: 0px;
+      margin: 0 auto; }
+      #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns a {
+        margin-right: 15px;
+        margin-bottom: 20px;
+        float: left;
+        text-align: center;
+        display: block;
+        width: 150px;
+        height: 30px;
+        background: #ffac7563;
+        font: bold 14px/30px "arial";
+        margin-top: 25px;
+        color: #555;
+        transition: 0.5s; }
+        #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns a:last-child {
+          margin-right: 0px; }
+        #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns a:hover {
+          background-color: #555;
+          color: #eee; }
+    #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown {
+      width: 35%;
+      margin-left: 0px;
+      margin-top: 0px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      transform: scale(1.2); } }
+@media screen and (max-width: 792px) {
+  #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .mainpic {
+    float: none;
+    width: 100%;
+    height: 250px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 30px; }
+  #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt {
+    float: none;
+    width: 100%;
+    text-align: center; }
+    #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns {
+      width: 315px;
+      height: 0px;
+      margin: 0 auto; }
+      #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns a {
+        margin-right: 15px;
+        margin-bottom: 20px;
+        float: left;
+        text-align: center;
+        display: block;
+        width: 150px;
+        height: 30px;
+        background: #ffac7563;
+        font: bold 14px/30px "arial";
+        margin-top: 25px;
+        color: #555;
+        transition: 0.5s; }
+        #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns a:last-child {
+          margin-right: 0px; }
+        #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns a:hover {
+          background-color: #555;
+          color: #eee; }
+    #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown {
+      width: 35%;
+      margin-left: 0px;
+      margin-top: 0px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      transform: scale(1.2); }
+  #community .inner .container #tab3 .upcoming .update-event .eventhead {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline; }
+    #community .inner .container #tab3 .upcoming .update-event .eventhead select {
+      width: 40%;
+      height: 25px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+      font: normal 15px/1 "arial";
+      color: #555;
+      border: none; }
+    #community .inner .container #tab3 .upcoming .update-event .eventhead span {
+      margin-right: 6px;
+      font: normal 12px/1 "arial";
+      color: #999; }
+    #community .inner .container #tab3 .upcoming .update-event .eventhead > a {
+      display: block;
+      float: none;
+      width: 100px;
+      height: 27px;
+      background: #ffac7563;
+      text-align: center;
+      font: normal 14px/28px "arial";
+      color: #555;
+      transition: 0.5s; }
+      #community .inner .container #tab3 .upcoming .update-event .eventhead > a:hover {
+        background-color: #555;
+        color: #eee; }
+  #community .inner .container #tab3 .upcoming .update-event .scrollbar {
+    height: 700px;
+    overflow-y: scroll; }
+    #community .inner .container #tab3 .upcoming .update-event .scrollbar table {
+      width: 100%;
+      margin-bottom: 50px;
+      border-collapse: collapse; }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr:nth-of-type(even) {
+        background: rgba(238, 238, 238, 0.555); }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th {
+        padding: 15px;
+        background: #ded6d4d0;
+        color: #fff; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(1) {
+          width: 10%; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(2) {
+          width: 70%; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(3) {
+          display: none; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(4) {
+          width: 20%; }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td {
+        padding: 13px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        color: #555; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td:nth-child(3) {
+          display: none; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td img {
+          width: 80%;
+          height: 100px;
+          object-fit: cover; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td a {
+          display: block;
+          width: 110px;
+          height: 30px;
+          background: rgba(195, 214, 235, 0.384);
+          margin-bottom: 10px;
+          text-align: center;
+          font: normal 13px/30px "arial";
+          color: #555;
+          transition: 0.5s; }
+          #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td a:hover {
+            color: #eee;
+            background: #555; }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr:hover td {
+        background: rgba(195, 211, 231, 0.164); }
+    #community .inner .container #tab3 .upcoming .update-event .scrollbar .eventmore {
+      display: block;
+      width: 150px;
+      height: 35px;
+      background: #ffac7563;
+      text-align: center;
+      font: normal 15px/35px "arial";
+      margin: 0 auto;
+      color: #555;
+      transition: 0.5s; }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar .eventmore:hover {
+        color: #eee;
+        background: #555; } }
+@media screen and (max-width: 716px) {
+  #community .inner .container #tab1 > h2::before {
+    width: 60%; }
+  #community .inner .container #tab2 > h2::before {
+    width: 60%; }
+  #community .inner .container #tab3 > h2::before {
+    width: 60%; }
+  #community .inner .container #tab3 .upcoming .update-event .eventhead select {
+    width: 37%; }
+  #community .inner .container #tab3 .upcoming .update-event .eventhead > a {
+    width: 40%;
+    height: 27px; }
+  #community .inner .container #tab3 .upcoming .update-event .scrollbar {
+    height: 700px;
+    overflow-y: scroll; }
+    #community .inner .container #tab3 .upcoming .update-event .scrollbar table {
+      width: 100%;
+      margin-bottom: 50px;
+      border-collapse: collapse; }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr:nth-of-type(even) {
+        background: rgba(238, 238, 238, 0.555); }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th {
+        padding: 15px;
+        background: #ded6d4d0;
+        color: #fff; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(1) {
+          width: 10%; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(2) {
+          width: 70%; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(3) {
+          display: none; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr th:nth-of-type(4) {
+          width: 20%; }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td {
+        padding: 13px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        color: #555; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td:nth-child(3) {
+          display: none; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td img {
+          width: 80%;
+          height: 100px;
+          object-fit: cover; }
+        #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td a {
+          display: block;
+          width: 110px;
+          height: 30px;
+          background: rgba(195, 214, 235, 0.384);
+          margin-bottom: 10px;
+          text-align: center;
+          font: normal 13px/30px "arial";
+          color: #555;
+          transition: 0.5s; }
+          #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td a:hover {
+            color: #eee;
+            background: #555; }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr:hover td {
+        background: rgba(195, 211, 231, 0.164); }
+    #community .inner .container #tab3 .upcoming .update-event .scrollbar .eventmore {
+      display: block;
+      width: 150px;
+      height: 35px;
+      background: #ffac7563;
+      text-align: center;
+      font: normal 15px/35px "arial";
+      margin: 0 auto;
+      color: #555;
+      transition: 0.5s; }
+      #community .inner .container #tab3 .upcoming .update-event .scrollbar .eventmore:hover {
+        color: #eee;
+        background: #555; } }
+@media screen and (max-width: 596px) {
+  #community .inner .container #tab2 > h2::before {
+    width: 55%; }
+  #community .inner .container #tab3 > h2::before {
+    width: 60%; }
+  #community .inner .container #tab3 .eventswiper {
+    padding: 40px 40px;
+    height: auto; }
+    #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 0 auto; }
+      #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .eventbtns a {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 34px;
+        background: #ffac7563;
+        font: bold 14px/34px "arial";
+        margin-top: 15px;
+        color: #555;
+        transition: 0.5s; }
+    #community .inner .container #tab3 .eventswiper .main_swiper .main1 .wrap .eventtxt .countdown {
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 0px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      transform: scale(1.2); }
+  #community .inner .container #tab3 .upcoming .update-event {
+    padding: 40px 10px; }
+    #community .inner .container #tab3 .upcoming .update-event .eventhead select {
+      width: 35%; }
+    #community .inner .container #tab3 .upcoming .update-event .eventhead > a {
+      width: 40%; }
+    #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover; }
+    #community .inner .container #tab3 .upcoming .update-event .scrollbar table tr td a {
+      display: block;
+      width: 100px;
+      height: 30px;
+      background: rgba(195, 214, 235, 0.384);
+      margin-bottom: 10px;
+      text-align: center;
+      font: normal 13px/30px "arial";
+      color: #555;
+      transition: 0.5s; } }
 /*vusual ----------------------------------------------*/
 #visual_join {
   width: 100%; }

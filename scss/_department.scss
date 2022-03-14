@@ -338,6 +338,12 @@
             padding: 60px 70px;
             position: relative;
 
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
             &::before{
                 content: "";
                 display:block; 
@@ -493,6 +499,14 @@
             justify-content: space-between;
             align-content:space-between ;
             flex-wrap: wrap;
+
+            &::after {
+                content: '';
+                display: inline;
+                position: absolute;
+                top: -99999px;
+                left: -99999px;
+            }
     
             article{
                 width: 310px; height: 320px;
@@ -529,14 +543,14 @@
                         clear:both; 
                     }
     
-                    .txt{
-                        width: 100%; height: 100%;
-                        transform: rotate(-90deg);
+                    .txt{    
                         display: flex;
                         transition: 0.5s;
                         letter-spacing: 1.2px;
                         position: absolute;
-                        bottom: 0%; left: -10%;
+                        bottom: 0px; left: 0px;
+                        transform-origin: left bottom;
+                        transform: rotate(-90deg) translateY(-20px);
                         
     
                         h2{
@@ -1183,14 +1197,7 @@
                     }
     
                     .txt{
-                        z-index: 9;
-                        width: 100%; height: 100%;
-                        transform: rotate(-90deg);
-                        display: flex;
-                        transition: 0.5s;
-                        letter-spacing: 1.2px;
-                        position: absolute;
-                        bottom:10px; left: -40px;
+                     
                         
     
                         h2{
@@ -1788,14 +1795,7 @@
                     }
     
                     .txt{
-                        z-index: 9;
-                        width: 100%; height: 100%;
-                        transform: rotate(-90deg);
-                        display: flex;
-                        transition: 0.5s;
-                        letter-spacing: 1.2px;
-                        position: absolute;
-                        bottom:10px; left: -40px;
+                       
                         
     
                         h2{
@@ -2394,15 +2394,7 @@
                         clear:both; 
                     }
     
-                    .txt{
-                        z-index: 9;
-                        width: 100%; height: 100%;
-                        transform: rotate(-90deg);
-                        display: flex;
-                        transition: 0.5s;
-                        letter-spacing: 1.2px;
-                        position: absolute;
-                        bottom:10px; left: -40px;
+                    .txt{                      
                         
     
                         h2{
@@ -2999,29 +2991,6 @@
                         content:''; 
                         display:block; 
                         clear:both; 
-                    }
-    
-                    .txt{
-                        width: 100%; height: 100%;
-                        transform: rotate(-90deg);
-                        display: flex;
-                        transition: 0.5s;
-                        letter-spacing: 1.2px;
-                        position: absolute;
-                        bottom: 20%; left: -20%;
-                        
-    
-                        h2{
-                            font:bold 18px/1 'EB Garamond';
-                            color:#333; 
-                            transition:1s; 
-                            margin-right: 10px;
-                        }
-    
-                        p{
-                            font:14px/18px 'EB Garamond'; 
-                            color:#999; 
-                        }
                     }
     
                     figure{

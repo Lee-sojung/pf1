@@ -94,6 +94,12 @@
                             transform: scale(1.2); //이거 안먹힘.. 
                         }
                     }
+
+                    &.on {
+                        >a {
+                            color: #ca988bf6;
+                        }
+                    }
                 }
             }
         }
@@ -102,9 +108,16 @@
             float: right;
             position: relative;
 
-            #tab1{
-                display: block;
-                h2{
+            >div {
+                display: none;
+
+                &.on {
+                    display: block;
+                }
+            }
+
+            #tab1{             
+                >h2{
                     text-align: right;
                     font: bold 38px/1 "arial";
                     color: #555;
@@ -131,7 +144,7 @@
 
                 .panel-question {
                     margin-bottom: 20px;
-                    position: relative;
+                    position: relative;                    
 
                     &.on .panel-body{
                         display: block;
@@ -139,10 +152,13 @@
                     &.on i.on
                     {
                         display: block;
-                        color: #d3a69ad0;
+                        color: #ca988bf6;
                     }
                     &.on i{
                         display: none;
+                    }
+                    &.on .panel-heading {
+                        background: #c3b1ad;
                     }
                     .panel-heading {
                         font: bold 18px/1 "arial";
@@ -190,18 +206,6 @@
                         font: bold 25px/1 "arial";
                         color: #999;
                         margin-bottom: 40px;
-
-                        &::before{
-                            content: "";
-                            display:block; 
-                            width:60%; 
-                            height:1px; 
-                            background:rgba(153, 153, 153, 0.527); 
-                            transition:1s; 
-                            position: absolute;
-                            top: 15px; left:0%;
-                            
-                            }
                     }
                     .help{
                         position: relative;
@@ -260,9 +264,8 @@
                 }
             }
 
-            #tab2{
-                display: none;
-                h2{
+            #tab2{           
+                >h2{
                     text-align: right;
                     font: bold 38px/1 "arial";
                     color: #555;
@@ -376,9 +379,8 @@
                 }
             }
 
-            #tab3{
-                display: none;
-                h2{
+            #tab3{           
+                >h2{
                     text-align: right;
                     font: bold 38px/1 "arial";
                     color: #555;
@@ -419,7 +421,7 @@
                                 .mainpic{
                                     float: left;
                                     width: 35%; height: 300px;
-                                    margin-right: 50px;
+                                    margin-right: 30px;
                                     margin-left: 10px;
                                     // border: 3px solid #ded6d4d0;
                                     box-shadow: 5px 5px 5px #ded6d4d0;
@@ -430,7 +432,8 @@
                                     }
                                 }
                                 .eventtxt{
-                                    
+                                    float: right;
+                                    width: 55%;
                                     
                                     h1{
                                         font: bold 27px/1 "arial";
@@ -448,123 +451,44 @@
                                         margin-top: 20px;
                                         word-break: break-all;
                                     }
-                                    a{
-                                        transform: translateX(30%);
-                                        margin-right: 15px;
-                                        float: left;
-                                        text-align: center;
-                                        display: block;
-                                        width: 150px; height: 30px;
-                                        background: #ffac7563;
-                                        font: bold 14px/30px "arial";
-                                        margin-top: 25px;
-                                        color: #555;
-                                        transition: 0.5s;
-            
-                                        &:hover{
-                                            background-color: #555;
-                                            color: #eee;
+                                    .eventbtns{
+                                        width: 100%;
+                                        a{
+                                            margin-right: 15px;
+                                            margin-bottom: 20px;
+                                            float: left;
+                                            text-align: center;
+                                            display: block;
+                                            width: 150px; height: 30px;
+                                            background: #ffac7563;
+                                            font: bold 14px/30px "arial";
+                                            margin-top: 25px;
+                                            color: #555;
+                                            transition: 0.5s;
+                
+                                            &:hover{
+                                                background-color: #555;
+                                                color: #eee;
+                                            }
                                         }
                                     }
+                               
         
                                     .countdown{
+                                        width: 100%;
+                                        margin-left: 30px;
                                         display: flex;
-                                        transform: scale(1.5);
-                                        position: absolute;
-                                        bottom: 30px; right:150px;
+                                        transform: scale(1.2);
+                                        
                     
-                                        .time{
+                                        .dayTime{
                                             display: flex;
                                             flex-direction: column;
                                             align-items: center;
                                             justify-content: center;
                                             margin: 10px;
                     
-                                            >h1{
-                                                font: bold 22px/1 "Poppins";
-                                                margin: 0 0 5px;
-                                            }
-                                            >span{
-                                                font: bold 11px/1 "Poppins";
-                                            }
-                                        }
-                    
-                                    }
-            
-                                }
-                            }              
-                        }
-                        .main2{
-                            width: 100%; height: 100%;
-                            position: relative;
-                            background: #fff;
-                            padding: 30px;
-                            .wrap{
-                                .mainpic{
-                                    float: left;
-                                    width: 35%; height: 300px;
-                                    margin-right: 50px;
-                                    margin-left: 10px;
-                                    // border: 3px solid #ded6d4d0;
-                                    box-shadow: 5px 5px 5px #ded6d4d0;
-            
-                                    img{
-                                        width: 100%; height: 100%;
-                                        object-fit: cover;
-                                    }
-                                }
-                                .eventtxt{
-                                    
-                                    
-                                    h1{
-                                        font: bold 27px/1 "arial";
-                                        color: #333;
-                                        margin-bottom: 20px;
-                                    }
-                                    >span{
-                                        background: rgba(195, 214, 235, 0.384);
-                                        font: normal 14px/1 "arial";
-                                        color: #777;
-                                    }
-                                    p{
-                                        font: normal 18px/1.2 "arial";
-                                        color: #555;
-                                        margin-top: 20px;
-                                        word-break: break-all;
-                                    }
-                                    a{
-                                        transform: translateX(30%);
-                                        margin-right: 15px;
-                                        float: left;
-                                        text-align: center;
-                                        display: block;
-                                        width: 150px; height: 30px;
-                                        background: #ffac7563;
-                                        font: bold 14px/30px "arial";
-                                        margin-top: 25px;
-                                        color: #555;
-                                        transition: 0.5s;
-            
-                                        &:hover{
-                                            background-color: #555;
-                                            color: #eee;
-                                        }
-                                    }
-        
-                                    .countdown{
-                                        display: flex;
-                                        transform: scale(1.5);
-                                        position: absolute;
-                                        bottom: 30px; right:150px;
-                    
-                                        .time{
-                                            display: flex;
-                                            flex-direction: column;
-                                            align-items: center;
-                                            justify-content: center;
-                                            margin: 10px;
-                    
-                                            >h1{
+                                            .time{
                                                 font: bold 22px/1 "Poppins";
                                                 margin: 0 0 5px;
                                             }
@@ -579,39 +503,17 @@
                             }              
                         }
                     }
-                    .swiper-button-prev{
-                        filter: grayscale(100%) brightness(1.4);
-                        transform: scale(0.5);
-                    }
-                    .swiper-button-next{
-                        filter: grayscale(100%) brightness(1.4);
-                        transform: scale(0.5);
-                    }
-                    
                 }     
                 
                 .upcoming{
                     position: relative;
-                    h2{
+                    >h2{
                         text-align: right;
                         font: bold 25px/1 "arial";
                         color: #999;
                         margin-bottom: 40px;
-
-                        &::before{
-                            content: "";
-                            display:block; 
-                            width:66%; 
-                            height:1px; 
-                            background:rgba(153, 153, 153, 0.527); 
-                            transition:1s; 
-                            position: absolute;
-                            top: 15px; left:0%;
-                            
-                            }
                     }
                     .update-event{
-                        margin-bottom: 100px;
                         border: 3px solid#ded6d4d0;
                         background: rgba(238, 238, 238, 0.555);
                         width: 100%;
@@ -739,29 +641,121 @@
         }
     }
 }
+
 /* tablet -------------------------------------------*/
-@media screen and (max-width:$tablet){
-    .community{
+@media screen and (max-width:1208px){
+    #community{
         .inner{
-            table{ 
-                tr{
-                    th{
-                        &:nth-of-type(1){width: 15%;}
-                        &:nth-of-type(3){width: 17%;}
-                        &:nth-of-type(4){width: 0%; display: none;}
-                    }
-                    td{
-                        &:nth-of-type(4){width: 0%; display: none;}
+            width:100%; 
+            padding: 0 40px;
+    
+            .tabbox{
+                width: 100%; 
+                float: none;
+                position: relative;
+                top: 0px;
+    
+                #tabbtns{
+                    width: 100%;
+                    display: flex;
+                    li{
+                        width: auto;
+                        margin-right: 20px;
+                        border-bottom: none;
                     }
                 }
             }
+            .container {
+                width: 100%;
+                float: none;
     
-            .pagination{
-                .numbers{
-                    a{
-                        @for $i from 6 through 10{
-                            &:nth-of-type(#{$i}){display: none;}
+                #tab1{             
+                    .faq_banner{
+                        .help{
+    
+                            .inner{
+                                margin-left: 0px;
+                                
+                                >h1{
+                                    text-align: center;
+                                }
+                                >p{
+                                    text-align: center;
+                                }
+                                .faq_icon{
+                                    text-align: center;
+                                    position: relative;
+                                }
+                            }
                         }
+                    
+                    }
+                }
+    
+                #tab3{           
+                    .eventswiper{
+                        width: 100%; height: auto;
+    
+                        .main_swiper{
+    
+                            .main1{
+                                .wrap{
+                                    .eventtxt{
+
+            
+                                        .countdown{
+                                            margin-left: 35px;
+                        
+                                        }
+                
+                                    }
+                                }              
+                            }
+                        }
+                    }     
+    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:912px){
+    #community{
+        .inner{
+            .container {
+    
+                #tab3{           
+                    .eventswiper{
+                        width: 100%; height: auto;
+    
+                        .main_swiper{
+    
+                            .main1{
+                                .wrap{
+                                    .eventtxt{
+
+            
+                                        .countdown{
+                                            margin-left: 35px;
+                        
+                                        }
+                
+                                    }
+                                }              
+                            }
+                        }
+                    }     
+                    .upcoming{
+                        position: relative;
+                        .update-event{
+                            .eventhead{
+                                width: 100%;
+                                select{
+                                    width: 100px;
+                                }
+                            }
+                        }   
                     }
                 }
             }
@@ -769,24 +763,542 @@
     }
 }
 
-/* mobile -------------------------------------------*/
-@media screen and (max-width:$mobile){
-    .community{
+@media screen and (max-width:880px){
+    #community{
         .inner{
-            table{ 
-                tr{
-                    th{
-                        &:nth-of-type(1){width: 0%; display: none;}
-                        &:nth-of-type(3){width: 27%;}
+            .container {
+                #tab1{
+                    >h2{
+                    &::before{
+                    width:70%; 
                     }
-                    td{
-                        &:nth-of-type(1){width: 0%; display: none;}
                     }
                 }
-            }
+                #tab2{
+                    >h2{
+                        &::before{
+                            width:70%; 
+                            }
+                    }
+                }
+                #tab3{   
+                    >h2{
     
-            .pagination{
-                .numbers{display: none;}
+                        &::before{
+                        width:70%; 
+                        }
+                    }        
+                    .eventswiper{
+                        .main_swiper{
+    
+                            .main1{
+                                .wrap{
+                                    .mainpic{
+                                        float: none;
+                                        width: 100%; height: 250px;
+                                        margin-right: 0px;
+                                        margin-left: 0px;
+                                        margin-bottom: 30px;
+                                    }
+                                    .eventtxt{
+                                        float: none;
+                                        width: 100%;
+                                        text-align: center;
+
+                                        .eventbtns{
+                                            width: 315px; 
+                                            height: 0px;
+                                            margin: 0 auto;
+                
+                                            a{
+                                                margin-right: 15px;
+                                                margin-bottom: 20px;
+                                                float: left;
+                                                text-align: center;
+                                                display: block;
+                                                width: 150px; height: 30px;
+                                                background: #ffac7563;
+                                                font: bold 14px/30px "arial";
+                                                margin-top: 25px;
+                                                color: #555;
+                                                transition: 0.5s;
+
+                                                &:last-child{ margin-right: 0px;}
+                    
+                                                &:hover{
+                                                    background-color: #555;
+                                                    color: #eee;
+                                                }
+                                            }
+                                        }
+                                    
+            
+                                        .countdown{
+                                            width: 35%;
+                                            margin-left: 0px;
+                                            margin-top: 0px;
+                                            margin: 0 auto;
+                                            display: flex;
+                                            justify-content: center;
+                                            transform: scale(1.2);
+                        
+                                        }
+                
+                                    }
+                                }              
+                            }
+                        }
+                    }        
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:792px){
+    #community{
+        .inner{
+            .container {
+    
+                #tab3{   
+                    .eventswiper{
+                        .main_swiper{
+    
+                            .main1{
+                                .wrap{
+                                    .mainpic{
+                                        float: none;
+                                        width: 100%; height: 250px;
+                                        margin-right: 0px;
+                                        margin-left: 0px;
+                                        margin-bottom: 30px;
+                                    }
+                                    .eventtxt{
+                                        float: none;
+                                        width: 100%;
+                                        text-align: center;
+
+                                        .eventbtns{
+                                            width: 315px; 
+                                            height: 0px;
+                                            margin: 0 auto;
+                
+                                            a{
+                                                margin-right: 15px;
+                                                margin-bottom: 20px;
+                                                float: left;
+                                                text-align: center;
+                                                display: block;
+                                                width: 150px; height: 30px;
+                                                background: #ffac7563;
+                                                font: bold 14px/30px "arial";
+                                                margin-top: 25px;
+                                                color: #555;
+                                                transition: 0.5s;
+
+                                                &:last-child{ margin-right: 0px;}
+                    
+                                                &:hover{
+                                                    background-color: #555;
+                                                    color: #eee;
+                                                }
+                                            }
+                                        }
+                                    
+            
+                                        .countdown{
+                                            width: 35%;
+                                            margin-left: 0px;
+                                            margin-top: 0px;
+                                            margin: 0 auto;
+                                            display: flex;
+                                            justify-content: center;
+                                            transform: scale(1.2);
+                        
+                                        }
+                
+                                    }
+                                }              
+                            }
+                        }
+                    }       
+                    .upcoming{
+                        .update-event{
+        
+                            .eventhead{
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: flex-start;
+                                align-items: baseline;
+                                select{
+                                    width: 40%;
+                                    height: 25px;
+                                    margin-right: 20px;
+                                    margin-bottom: 30px;
+                                    font: normal 15px/1 "arial";
+                                    color: #555;
+                                    border: none;
+                                }
+                                span{
+                                    margin-right: 6px;
+                                    font: normal 12px/1 "arial";
+                                    color: #999;
+                                }
+                                >a{
+                                    display: block;
+                                    float: none;
+                                    
+                                    width: 100px; height: 27px;
+                                    background: #ffac7563;
+                                    text-align: center;
+                                    font: normal 14px/28px "arial";
+                                    color: #555;
+                                    transition: 0.5s;
+            
+                                    &:hover{
+                                        background-color: #555;
+                                        color: #eee;
+                                    }
+                                }
+                            }
+                            .scrollbar{
+                                height: 700px; overflow-y: scroll;
+    
+                                table{
+                                    width:100%; 
+                                    margin-bottom:50px;
+                                    border-collapse:collapse; 
+    
+                        
+                                    tr{
+                                        &:nth-of-type(even){
+                                            background:rgba(238, 238, 238, 0.555); 
+                                        }
+                                        th{
+                                            padding:15px; 
+                                            background:#ded6d4d0; 
+                                            color:#fff; 
+                        
+                                            &:nth-of-type(1){width: 10%;}
+                                            &:nth-of-type(2){width: 70%;}
+                                            &:nth-of-type(3){display: none;}
+                                            &:nth-of-type(4){width: 20%;}
+    
+                                        }
+                                        td{
+                                            padding: 13px;
+                                            border-bottom: 1px solid #ddd;
+                                            text-align: center;
+                                            color: #555;
+
+                                            &:nth-child(3){display: none;}
+    
+            
+            
+                                            img{
+                                                width: 80%; height: 100px;
+                                                object-fit: cover;
+                                            }
+            
+                                            a{
+                                                display: block;
+                                                width: 110px; height: 30px;
+                                                background: rgba(195, 214, 235, 0.384);
+                                                margin-bottom: 10px;
+                                                text-align: center;
+                                                font: normal 13px/30px "arial";
+                                                color: #555;
+                                                transition: 0.5s;
+            
+                                                &:hover{
+                                                    color: #eee;
+                                                    background: #555;
+                                                }
+                                                
+                                            }
+                        
+                                        }
+    
+                                        &:hover{
+                                            td{
+                                                background:rgba(195, 211, 231, 0.164); 
+                                            }
+                                        }
+                                    }   
+                                }
+                                
+                                .eventmore{
+                                    display: block;
+                                    width: 150px;
+                                    height: 35px;
+                                    background: #ffac7563;
+                                    text-align: center;
+                                    font: normal 15px/35px "arial";
+                                    margin: 0 auto;
+                                    color: #555;
+                                    transition: 0.5s;
+    
+                                    &:hover{
+                                        color: #eee;
+                                        background: #555;
+                                    }
+                                }
+                            }
+    
+        
+                        }   
+                    } 
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:716px){
+    #community{
+        .inner{
+            .container {
+                #tab1{
+                    >h2{
+                        &::before{
+                            width:60%; 
+                            }
+                    }
+                }
+                #tab2{
+                    >h2{
+                        &::before{
+                            width:60%; 
+                            }
+                    }
+                }
+                #tab3{    
+                    >h2{
+                        &::before{
+                            width:60%; 
+                            }
+                    }
+                    
+                    .upcoming{
+                        .update-event{
+        
+                            .eventhead{
+                                select{
+                                    width: 37%;
+
+                                }
+
+                                >a{
+                                    width: 40%; height: 27px;
+
+                                }
+                            }
+                            .scrollbar{
+                                height: 700px; overflow-y: scroll;
+    
+                                table{
+                                    width:100%; 
+                                    margin-bottom:50px;
+                                    border-collapse:collapse; 
+    
+                        
+                                    tr{
+                                        &:nth-of-type(even){
+                                            background:rgba(238, 238, 238, 0.555); 
+                                        }
+                                        th{
+                                            padding:15px; 
+                                            background:#ded6d4d0; 
+                                            color:#fff; 
+                        
+                                            &:nth-of-type(1){width: 10%;}
+                                            &:nth-of-type(2){width: 70%;}
+                                            &:nth-of-type(3){display: none;}
+                                            &:nth-of-type(4){width: 20%;}
+    
+                                        }
+                                        td{
+                                            padding: 13px;
+                                            border-bottom: 1px solid #ddd;
+                                            text-align: center;
+                                            color: #555;
+
+                                            &:nth-child(3){display: none;}
+    
+            
+            
+                                            img{
+                                                width: 80%; height: 100px;
+                                                object-fit: cover;
+                                            }
+            
+                                            a{
+                                                display: block;
+                                                width: 110px; height: 30px;
+                                                background: rgba(195, 214, 235, 0.384);
+                                                margin-bottom: 10px;
+                                                text-align: center;
+                                                font: normal 13px/30px "arial";
+                                                color: #555;
+                                                transition: 0.5s;
+            
+                                                &:hover{
+                                                    color: #eee;
+                                                    background: #555;
+                                                }
+                                                
+                                            }
+                        
+                                        }
+    
+                                        &:hover{
+                                            td{
+                                                background:rgba(195, 211, 231, 0.164); 
+                                            }
+                                        }
+                                    }   
+                                }
+                                
+                                .eventmore{
+                                    display: block;
+                                    width: 150px;
+                                    height: 35px;
+                                    background: #ffac7563;
+                                    text-align: center;
+                                    font: normal 15px/35px "arial";
+                                    margin: 0 auto;
+                                    color: #555;
+                                    transition: 0.5s;
+    
+                                    &:hover{
+                                        color: #eee;
+                                        background: #555;
+                                    }
+                                }
+                            }
+    
+        
+                        }   
+                    } 
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:596px){
+    #community{
+        .inner{
+            .container {
+                #tab2{
+                    >h2{
+                        &::before{
+                            width:55%; 
+                            }
+                    }
+                }
+                #tab3{    
+                    >h2{
+    
+                    &::before{
+                    width:60%; 
+                    }
+                    }       
+                    .eventswiper{
+                        padding: 40px 40px;
+                        height: auto;
+                        .main_swiper{
+                            .main1{
+                                
+                                .wrap{
+                                    
+                                    .mainpic{
+                            
+                                    }
+                                    .eventtxt{
+
+                                        .eventbtns{
+                                            position: relative;
+                                            width: 100%; 
+                                            height: auto;
+                                            margin: 0 auto;
+                
+                                            a{
+                                                margin-right: 0px;
+                                                margin-bottom: 20px;
+                                                float: none;
+                                                text-align: center;
+                                                display: block;
+                                                width: 100%; height: 34px;
+                                                background: #ffac7563;
+                                                font: bold 14px/34px "arial";
+                                                margin-top: 15px;
+                                                color: #555;
+                                                transition: 0.5s;
+
+                                    
+                                            }
+                                        }
+                                    
+            
+                                        .countdown{
+                                            width: 100%;
+                                            margin-left: 0px;
+                                            margin-top: 0px;
+                                            margin: 0 auto;
+                                            display: flex;
+                                            justify-content: center;
+                                            transform: scale(1.2);
+                                           
+
+                        
+                                        }
+                
+                                    }
+                                }              
+                            }
+                        }
+                    }       
+                    .upcoming{
+                        .update-event{
+                            padding: 40px 10px;
+                            .eventhead{
+                                select{
+                                    width: 35%;
+                                }
+                                >a{
+                                    width: 40%;
+                                }
+                            }
+                            .scrollbar{
+                                table{
+                                    tr{
+                                        td{
+                                            img{
+                                                width: 100%; height: 100px;
+                                                object-fit: cover;
+                                            }
+            
+                                            a{
+                                                display: block;
+                                                width: 100px; height: 30px;
+                                                background: rgba(195, 214, 235, 0.384);
+                                                margin-bottom: 10px;
+                                                text-align: center;
+                                                font: normal 13px/30px "arial";
+                                                color: #555;
+                                                transition: 0.5s;
+            
+                                                
+                                            }
+                        
+                                        }
+                                    }   
+                                }
+                            }
+    
+        
+                        }   
+                    } 
+                }
             }
         }
     }
