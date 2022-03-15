@@ -1068,7 +1068,7 @@ $mobile: 539px;
 /* comments --------------------------------*/
 #comments {
 	width: 100%;
-	padding: 100px 0px 150px;
+	padding: 100px 0px 100px;
 	background: #ded6d4d0;
 
 	.inner {
@@ -2048,7 +2048,7 @@ $mobile: 539px;
 	/* comments --------------------------------*/
 	#comments {
 		width: 100%;
-		padding: 100px 0px 150px;
+		padding: 100px 40px 100px;
 		background: #ded6d4d0;
 
 		.inner {
@@ -3346,7 +3346,7 @@ $mobile: 539px;
 				article {
 					width: 47%;
 					border: 1px solid #eee;
-					margin-right: 20px;
+					margin-right: 0px;
                     margin-bottom: 30px;
 
 					&:last-child {
@@ -3602,7 +3602,6 @@ $mobile: 539px;
 	/* comments --------------------------------*/
 	#comments {
 		width: 100%;
-		padding: 100px 0px 150px;
 		background: #ded6d4d0;
 
 		.inner {
@@ -3969,7 +3968,7 @@ $mobile: 539px;
 				article {
 					width: 47%;
 					border: 1px solid #eee;
-					margin-right: 20px;
+					margin-right: 0px;
                     margin-bottom: 30px;
 
 					&:last-child {
@@ -4225,7 +4224,6 @@ $mobile: 539px;
 	/* comments --------------------------------*/
 	#comments {
 		width: 100%;
-		padding: 100px 0px 150px;
 		background: #ded6d4d0;
 
 		.inner {
@@ -4843,7 +4841,7 @@ $mobile: 539px;
 				article {
 					width: 47%;
 					border: 1px solid #eee;
-					margin-right: 20px;
+					margin-right: 0px;
                     margin-bottom: 30px;
 
 					&:last-child {
@@ -5099,7 +5097,6 @@ $mobile: 539px;
 	/* comments --------------------------------*/
 	#comments {
 		width: 100%;
-		padding: 100px 0px 150px;
 		background: #ded6d4d0;
 
 		.inner {
@@ -5961,7 +5958,6 @@ $mobile: 539px;
 	/* comments --------------------------------*/
 	#comments {
 		width: 100%;
-		padding: 100px 0px 150px;
 		background: #ded6d4d0;
 
 		.inner {
@@ -6087,5 +6083,66 @@ $mobile: 539px;
 	}
 }
 
+}
+@media screen and (max-width: 464px) {
+    /* visual --------------------------------*/
+#visual {
+
+
+	.inner {
+
+		span {
+			width: 120px;
+			font: normal 15px/1.2 "EB Garamond";
+			color: #555;
+			float: left;
+			left: -40px;
+			bottom: -70px;
+			transform: rotate(-90deg) translateX(0px) translateY(-40px);
+		}
+	}
+}
+	/* news --------------------------------*/
+	#news {
+
+		.inner {
+
+			.wrap {
+
+				article {
+
+					.box3 {
+						> h1 {
+							top: -60px;
+						}
+
+						span {
+							left: 0px;
+						}
+					}
+					.box6 {
+
+						.pic7 {
+							width: 90%;
+						}
+						> h1 {
+							top: 100%;
+						}
+
+				
+						span {
+							background: rgba(238, 238, 238, 0.315);
+							position: absolute;
+							bottom: 30%;
+							right: -50px;
+							transform: rotate(90deg);
+							color: #bbb;
+							font: 16px/1 "EB Garamond";
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
