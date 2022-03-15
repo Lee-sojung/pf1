@@ -3558,7 +3558,7 @@ input, label {
 
 .join {
   width: 100%;
-  padding: 150px 0; }
+  padding: 100px 0; }
   .join .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -3630,7 +3630,8 @@ input, label {
 /* tablet -------------------------------------*/
 @media screen and (max-width: 1179px) {
   .join .inner {
-    width: 100%; }
+    width: 100%;
+    padding: 0px 40px; }
     .join .inner table th {
       display: none; }
       .join .inner table th:last-child {
@@ -3645,7 +3646,9 @@ input, label {
       width: 90%; }
     .join .inner table .hobbyTxt,
     .join .inner table .genderTxt {
-      display: block; } }
+      display: block; }
+    .join .inner table td {
+      border-left: none; } }
 /* mobile -------------------------------------*/
 @media screen and (max-width: 539px) {
   .join .inner table th:last-child {
@@ -4359,7 +4362,8 @@ figure.pop {
   .location {
     width: 100%; }
     .location .inner {
-      width: 100%; }
+      width: 100%;
+      padding: 40px 40px; }
       .location .inner #map {
         height: 400px; }
       .location .inner .traffic {

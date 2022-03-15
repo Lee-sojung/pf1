@@ -58,7 +58,7 @@
 
 .join {
 	width: 100%;
-	padding: 150px 0;
+	padding: 100px 0;
 
 	.inner {
 		width: 1180px;
@@ -157,6 +157,7 @@
 	.join {
 		.inner {
 			width: 100%;
+			padding: 0px 40px;
 			table {
 				th {
 					display: none;
@@ -165,6 +166,7 @@
 						width: 100%;
 					}
 				}
+				
 
 				input[type="text"],
 				input[type="password"] {
@@ -180,6 +182,9 @@
 				.genderTxt {
 					display: block;
 				}
+				td {
+				border-left: none;
+			}
 			}
 		}
 	}
