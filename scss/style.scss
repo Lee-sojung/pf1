@@ -5419,7 +5419,7 @@ $mobile: 539px;
 							float: right;
 							width: 250px;
 							position: absolute;
-							bottom: 35%;
+							bottom: 30%;
 							right: 70px;
 							text-align: right;
 							font: normal 16px/1.2 "EB Garamond";
@@ -5455,7 +5455,7 @@ $mobile: 539px;
 							letter-spacing: 1.2px;
 							position: absolute;
 							top: 80%;
-							left: -70px;
+							left: -85px;
 							transform: rotate(90deg);
 						}
 
@@ -5464,7 +5464,7 @@ $mobile: 539px;
 							text-align: left;
 							position: absolute;
 							bottom: -100px;
-							left: 30%;
+							left: 20%;
 							> h2 a {
 								display: block;
 								width: 200px;
@@ -5565,10 +5565,12 @@ $mobile: 539px;
 
 	/* banner --------------------------------*/
 	#banner {
+		background: url(../img/seabanner.jpg) no-repeat center/cover;
 		.inner {
             padding: 0 40px;
-			width: 100%;
+			width: 100%; 
 			margin: 0 auto;
+			
 
 			h1 {
 				font: italic 28px/1 "EB Garamond";
@@ -5959,6 +5961,7 @@ $mobile: 539px;
 	#comments {
 		width: 100%;
 		background: #ded6d4d0;
+		padding: 100px 20px;
 
 		.inner {
 			width: 100%;
@@ -5988,6 +5991,7 @@ $mobile: 539px;
 					color: #555;
 					float: left;
 					transition: 0.5s;
+					margin-bottom: 10px;
 				}
 				span {
 					font: 12px/1 "arial";

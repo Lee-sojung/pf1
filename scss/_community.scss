@@ -1187,23 +1187,48 @@
 @media screen and (max-width:596px){
     #community{
         .inner{
+            padding: 0 0px ;
+            .tabbox{
+                padding: 0 20px;
+            }
             .container {
+                #tab1{
+                    >h2{ padding: 0 20px;
+                        &::before{
+                            margin-left: 20px;
+                        }
+                    }
+                    .faq{
+                        padding: 0 20px;
+                    }
+                    .faq_banner{
+                        h2{
+                            margin-right: 10px;
+                        }
+                    
+                    }
+                }
                 #tab2{
+                    width: 100%;
                     >h2{
+                        padding: 0 20px ;
                         &::before{
                             width:55%; 
+                            margin-left: 20px;
                             }
                     }
                 }
                 #tab3{    
                     >h2{
+                        padding: 0 20px;
     
                     &::before{
                     width:60%; 
+                    margin-left: 20px;
                     }
                     }       
                     .eventswiper{
-                        padding: 40px 40px;
+                        padding: 40px 20px;
                         height: auto;
                         .main_swiper{
                             .main1{

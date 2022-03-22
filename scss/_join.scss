@@ -191,25 +191,37 @@
 }
 
 /* mobile -------------------------------------*/
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: 539px) {
 	.join {
 		.inner {
 			table {
+				width: 100%;
 				th {
 					&:last-child {
 						font-size: 0;
 					}
+					input[type="reset"],
+					input[type="submit"],
+						{
+						width: 40%;
+					}
 				}
-				input[type="reset"],
-				input[type="submit"] {
-					width: 40%;
-					margin: 0 5%;
+				td{
+					input[type="text"],
+					input[type="password"],
+						{
+						width: 100%;
+					}
+					select{
+						width: 100%;
+					}
+
+					textarea{
+						width: 100%;
+					}
+					
 				}
 
-				input[type="text"],
-				input[type="password"] {
-					width: 100%;
-				}
 				label {
 					display: inline-block;
 					margin-right: 10px;
